@@ -9,7 +9,13 @@ The order of executing statements is:
 - Synchronous code
 - Microtasks
 - Macrotasks
+Comparison with Other Asynchronous Methods
+The order of execution for different asynchronous methods is as follows:
 
+Synchronous code
+process.nextTick() callbacks
+Microtasks (e.g., Promise callbacks)
+Macrotasks (e.g., setTimeout, setImmediate)
 ---
 
 #### Questions 
