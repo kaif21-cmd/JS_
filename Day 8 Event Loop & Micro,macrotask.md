@@ -15,80 +15,80 @@ The order of executing statements is:
 #### Questions 
 
 ```jsx
-// //Microtask are the higher Priority Task they are executed before the next rendering 
-// //example promises(promise.then,cath,finally)
-// //Macrotask
-// //macrotask are the lower priority task that are executed after Micro task
-// //ex setTimout,setinterval,setImmediate
-// //order of executing statement
-// //synch>microtask>macro
-// Promise.resolve().then(()=>{
-//     console.log('Fisrst Micro Task');
-//     Promise.resolve().then(()=>{
-//         console.log('second Micro Task')
-//     })
-// })
-// console.log('Script end')
-// // ouput script end ,first micro,second micro
+//Microtask are the higher Priority Task they are executed before the next rendering 
+//example promises(promise.then,cath,finally)
+//Macrotask
+//macrotask are the lower priority task that are executed after Micro task
+//ex setTimout,setinterval,setImmediate
+//order of executing statement
+//synch>microtask>macro
+Promise.resolve().then(()=>{
+    console.log('Fisrst Micro Task');
+    Promise.resolve().then(()=>{
+        console.log('second Micro Task')
+    })
+})
+console.log('Script end')
+// ouput script end ,first micro,second micro
 
-// //2question
-// console.log('start')
-// setTimeout(()=>{
-//     console.log('Timeout')
-// },0)
-// Promise.resolve().then(()=>{
-//     console.log('promise')
-// })
-// console.log('end')
-// // output : start end promise timeout
+//2question
+console.log('start')
+setTimeout(()=>{
+    console.log('Timeout')
+},0)
+Promise.resolve().then(()=>{
+    console.log('promise')
+})
+console.log('end')
+// output : start end promise timeout
 
-// //3 question
-// console.log('A');
-// setImmediate(() => console.log('B'));
-// Promise.resolve().then(() => console.log('C'));
-// console.log('D');
-// //output a,d,c,b
+//3 question
+console.log('A');
+setImmediate(() => console.log('B'));
+Promise.resolve().then(() => console.log('C'));
+console.log('D');
+//output a,d,c,b
 
-// //question 4
-// setTimeout(() => console.log(1), 0);
-// setTimeout(() => console.log(2), 100);
-// Promise.resolve().then(() => console.log(3));
-// Promise.resolve().then(() => {
-//     console.log(4);
-//     setTimeout(() => console.log(5), 0);
-// });
-// console.log(6);
-// //6 3,4,1,5,2
+//question 4
+setTimeout(() => console.log(1), 0);
+setTimeout(() => console.log(2), 100);
+Promise.resolve().then(() => console.log(3));
+Promise.resolve().then(() => {
+    console.log(4);
+    setTimeout(() => console.log(5), 0);
+});
+console.log(6);
+//6 3,4,1,5,2
 
-// //question 5
+//question 5
 
-// setTimeout(() => console.log('timeout1'), 0);
-// setTimeout(() => console.log('timeout2'), 0);
-// Promise.resolve().then(() => console.log('promise1'));
-// Promise.resolve().then(() => {
-//     console.log('promise2');
-//     Promise.resolve().then(() => console.log('promise3'));
-// });
-// console.log('end');
-// //end ,promise1,promise2,promise3,timeout1,timeout2
+setTimeout(() => console.log('timeout1'), 0);
+setTimeout(() => console.log('timeout2'), 0);
+Promise.resolve().then(() => console.log('promise1'));
+Promise.resolve().then(() => {
+    console.log('promise2');
+    Promise.resolve().then(() => console.log('promise3'));
+});
+console.log('end');
+//end ,promise1,promise2,promise3,timeout1,timeout2
 
-// //question 6 
-// console.log('start');
+//question 6 
+console.log('start');
 
-// setTimeout(() => {
-//     console.log('setTimeout');
-// }, 0);
+setTimeout(() => {
+    console.log('setTimeout');
+}, 0);
 
-// Promise.resolve().then(() => {
-//     console.log('promise1');
-// }).then(() => {
-//     console.log('promise2');
-// });
+Promise.resolve().then(() => {
+    console.log('promise1');
+}).then(() => {
+    console.log('promise2');
+});
 
-// console.log('end');
-// //output start,end,promise1,promise2,settimeout
+console.log('end');
+//output start,end,promise1,promise2,settimeout
 
-// //question 7
+//question 7
 
 console.log('first');
 
