@@ -14,7 +14,7 @@ The order of executing statements is:
 
 #### Questions 
 
-```
+```jsx
 // //Microtask are the higher Priority Task they are executed before the next rendering 
 // //example promises(promise.then,cath,finally)
 // //Macrotask
