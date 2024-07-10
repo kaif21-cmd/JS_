@@ -1,59 +1,59 @@
-// //QYESTION1 FACTORY FUNCTION IN JS
-// // A factory function is a function in JavaScript that returns a new object every time it is called. Unlike using the new keyword with a constructor function or a class, a factory function simply creates and returns an object using object literal syntax or other means.
-// // Factory functions are useful when you want to create multiple instances of similar objects without using classes or constructor functions. They can also encapsulate and manage the creation logic, allowing for more flexibility and customization
-// function createperson(name,age){
-//     return{
-//         name:name,
-//         age:age,
-//         greet:function(){
-//             console.log(`hello my name is ${this.name} and  my age is ${this.age}`)
-//             }
-//     }
+//QUESTION 1 FACTORY FUNCTION IN JS
+// A factory function is a function in JavaScript that returns a new object every time it is called. Unlike using the new keyword with a constructor function or a class, a factory function simply creates and returns an object using object literal syntax or other means.
+// Factory functions are useful when you want to create multiple instances of similar objects without using classes or constructor functions. They can also encapsulate and manage the creation logic, allowing for more flexibility and customization
+function createperson(name,age){
+    return{
+        name:name,
+        age:age,
+        greet:function(){
+            console.log(`hello my name is ${this.name} and  my age is ${this.age}`)
+            }
+    }
     
-// }
-// const person1=createperson("kaif",23)
-// person1.greet()
+}
+const person1=createperson("kaif",23)
+person1.greet()
 
-// //QUESTION 2
-// //ERROR HANDLING IN JS 
-// try{
-// let result=somefunction()
-// console.log(result)
-// }catch(error){
-// console.error('An error message occured',error)
-// }finally{
-// console.log("this block is always executed ")
-// }
-// //explanation
-// try {
-//     // Code that may throw an error
-// } catch (error) {
-//     // Code to handle the error
-// } finally {
-//     // Code that will run regardless of whether an error occurred or not (optional)
-// }
+//QUESTION 2
+//ERROR HANDLING IN JS 
+try{
+let result=somefunction()
+console.log(result)
+}catch(error){
+console.error('An error message occured',error)
+}finally{
+console.log("this block is always executed ")
+}
+//explanation
+try {
+    // Code that may throw an error
+} catch (error) {
+    // Code to handle the error
+} finally {
+    // Code that will run regardless of whether an error occurred or not (optional)
+}
 
-// //QUESTION 3
-// //WHAT IS IFFE -> IMEDIATE INVOKED FUNCTION CALLED IFFE 
-// // advantage of iffe function is provide encapsulation and isolation help in data privacy inaccesbile from outside the function
-// (function(){
-//     console.log('hello')
-// })();
+//QUESTION 3
+//WHAT IS IFFE -> IMEDIATE INVOKED FUNCTION CALLED IFFE 
+// advantage of iffe function is provide encapsulation and isolation help in data privacy inaccesbile from outside the function
+(function(){
+    console.log('hello')
+})();
 
-// //example
-// (function(){
-// var counter=0;
-// function increment(){
-//     counter++;
-//     console.log("counter",counter)
-// }
-// increment();
-// increment()
-// })()
-// increment()// not run outside the function that by there is a advantage in iffe for data privacy encapsulation and isolation
+//example
+(function(){
+var counter=0;
+function increment(){
+    counter++;
+    console.log("counter",counter)
+}
+increment();
+increment()
+})()
+increment()// not run outside the function that by there is a advantage in iffe for data privacy encapsulation and isolation
 
-// //QUESTION 4 CALL,APPLY,BIND
-//call bind apply methord is use to control the value of this in function and passing argumnet to function
+// //QUESTION 4 CALL,APPLY,BlIND
+// call bind apply methord is use to control the value of this in function and passing argumnet to function
 
 const obj={
     name:"kaif"
@@ -98,8 +98,38 @@ console.log("Maximum number is ", maxnumber) //fro second max max-1
 //QUESTION 8
 //WHAT IS SPREAD OPERATOR
 //SPEAD OPEARTOR IS DONATED BY ...
-//USES 1. completely COPYING ARRAY 
+//USES 1. completely COPYING ARRAY /objects 
 const array1=[1,2,3]
 const array2=[...array1]
-array1.pop()
 console.log(array2)
+// 2 combining array ,merging
+const arr1 = [1, 2, 3];
+const arr2 = [4, 5, 6];
+const combined = [...arr1, ...arr2];
+console.log(combined); // Output: [1, 2, 3, 4, 5, 6]
+//3 use const numbers = [1, 2, 3, 4, 5];
+const max = Math.max(...numbers);
+console.log(max); // Output: 5
+
+//QUESTION 9 REST OPERATOR 
+// The rest operator is a powerful feature in JavaScript that allows functions to accept an indefinite number of arguments, and it can be used for array and object destructuring. It makes your code more flexible 
+function sum(...numbers) {
+    return numbers.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sum(1, 2, 3)); // Output: 6
+console.log(sum(4, 5, 6, 7)); // Output: 22
+
+//EXAMPLE
+function multiply(multiplier, ...numbers) {
+    return numbers.map(num => num * multiplier);
+}
+console.log(multiply(2, 1, 2, 3)); // Output: [2, 4, 6]
+console.log(multiply(3, 4, 5, 6)); // Output: [12, 15, 18]
+
+//QUESTION 10 WHAT IS HIGHER ORDER FUNCTION
+//A FUNCTION THAT RETURNS ANOTHER FUNCTION  IS CALLED HIGHER ORDER FUNCTION
+//EXAMPLE // FILTER,MAP,REDUCE THEY ALL ARE HIGHER ORDER FUNCTION
+
+
+
+
