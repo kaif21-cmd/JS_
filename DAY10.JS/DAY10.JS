@@ -1,0 +1,105 @@
+// //QYESTION1 FACTORY FUNCTION IN JS
+// // A factory function is a function in JavaScript that returns a new object every time it is called. Unlike using the new keyword with a constructor function or a class, a factory function simply creates and returns an object using object literal syntax or other means.
+// // Factory functions are useful when you want to create multiple instances of similar objects without using classes or constructor functions. They can also encapsulate and manage the creation logic, allowing for more flexibility and customization
+// function createperson(name,age){
+//     return{
+//         name:name,
+//         age:age,
+//         greet:function(){
+//             console.log(`hello my name is ${this.name} and  my age is ${this.age}`)
+//             }
+//     }
+    
+// }
+// const person1=createperson("kaif",23)
+// person1.greet()
+
+// //QUESTION 2
+// //ERROR HANDLING IN JS 
+// try{
+// let result=somefunction()
+// console.log(result)
+// }catch(error){
+// console.error('An error message occured',error)
+// }finally{
+// console.log("this block is always executed ")
+// }
+// //explanation
+// try {
+//     // Code that may throw an error
+// } catch (error) {
+//     // Code to handle the error
+// } finally {
+//     // Code that will run regardless of whether an error occurred or not (optional)
+// }
+
+// //QUESTION 3
+// //WHAT IS IFFE -> IMEDIATE INVOKED FUNCTION CALLED IFFE 
+// // advantage of iffe function is provide encapsulation and isolation help in data privacy inaccesbile from outside the function
+// (function(){
+//     console.log('hello')
+// })();
+
+// //example
+// (function(){
+// var counter=0;
+// function increment(){
+//     counter++;
+//     console.log("counter",counter)
+// }
+// increment();
+// increment()
+// })()
+// increment()// not run outside the function that by there is a advantage in iffe for data privacy encapsulation and isolation
+
+// //QUESTION 4 CALL,APPLY,BIND
+//call bind apply methord is use to control the value of this in function and passing argumnet to function
+
+const obj={
+    name:"kaif"
+}
+function greeting(message){
+    console.log(`${message} ${this.name}`)
+}
+greeting.call(obj,'hello') //call argument passing as a varible
+greeting.apply(obj,['hi'])//argumnent passing as an array
+//bind
+//bind give a new function which allow to set a value of this and add optional argument
+const kaif=greeting.bind(obj)
+kaif("hello bhai")
+
+// QUESTION 5
+//ANONYMOUS FUNCTION ARE THOSE FUNCTION WHICH ARE USED WITHOUT NAME LIKE IFFE ,MAP,FILTER THERE IS NO NEED TO GIVE NAME BUT THEY WORKK PROPERLY 
+//QUESTION 6
+//REVERSE AN ARRAY without using inbuilt function 
+const array=[1,2,3,4,5]
+const reversearray=[]
+for(let i=array.length-1;i>=0;i--){
+    reversearray.push(array[i])
+}
+console.log(reversearray)
+
+//question 7 max element with out using in built function
+function findmax(arr){
+    if(arr.length===0){
+        throw new Error("Array is empty")
+    }
+    let max=arr[0]
+    for(let i=1;i<arr.length;i++){
+        if(arr[i]>max)
+        max=arr[i]
+    }
+    return max;
+}
+const number=[1,2,3,4,5]
+const maxnumber=findmax(number)
+console.log("Maximum number is ", maxnumber) //fro second max max-1
+
+//QUESTION 8
+//WHAT IS SPREAD OPERATOR
+//SPEAD OPEARTOR IS DONATED BY ...
+//USES 1. completely COPYING ARRAY 
+const array1=[1,2,3]
+const array2=[...array1]
+array1.pop()
+console.log(array2)
