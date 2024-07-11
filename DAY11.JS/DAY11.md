@@ -1,6 +1,6 @@
 
 ```jsx
-#1 QUESTION 1
+# QUESTION 1
 function sayhi(){
     console.log(name)
     console.log(age)
