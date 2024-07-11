@@ -56,8 +56,9 @@ console.log(shape.diameter())//20
 # question 5
 ```jsx
 console.log(+true ,!'kaif') 
-
-//QUESTION 5
+```
+# QUESTION 6
+```jsx
 let c={
     greeting:'hey'
 }
@@ -69,7 +70,7 @@ console.log(d.greeting)
 //output hello due to refernce type
 ```
 
-# QUESTION 6
+# QUESTION 7
 ```jxx
 let a=3;
 let b=new Number(3) //new number is an built in function constructor it look like a number nbut it is not a number it is an object
@@ -79,7 +80,7 @@ console.log(a===b)//false beacuase different data type
 console.log(b===c)//false different data types
 ```
 
-# Question 7
+# Question 8
 ```jsx
 let greeting;
 greeting={
@@ -88,7 +89,7 @@ greeting={
 console.log(greeting)
 ```
 
-# QUESTION 8 
+# QUESTION 9
 ```jsx
 function Person(firstname, lastname) {
     this.firstname = firstname;
@@ -143,7 +144,7 @@ console.log(num)//2
 // ++num increments num to 2.
 // console.log(++num) prints the new value of num, which is 2.
 // Output: 2
-```
+
 
 // Step 3: console.log(num);
 // At this point, num has already been incremented to 2 in the previous step.
