@@ -1,5 +1,6 @@
-1
+
 ```jsx
+#1 QUESTION 1
 function sayhi(){
     console.log(name)
     console.log(age)
@@ -9,7 +10,7 @@ function sayhi(){
 sayhi`` //ouput is reference  error and undefined
 // hoisting is only occur in var variable
 
-//question 2
+#question 2
 for(var i=0;i<3;i++){
     setTimeout(()=>{
         console.log(i)
@@ -21,7 +22,7 @@ for(let i=0;i<3;i++){
     }, 1);
 }// due to block scope 0 1 2 
 
-//QUESTION 3
+#QUESTION 3
 const shape={
     radius:10,
     diameter(){
@@ -35,7 +36,7 @@ const shape={
 console.log(shape.perimeter())// so it will so Nan //due pi oyherwise it show reference error
 console.log(shape.diameter())//20
 
-// question 4 what will be the output 
+#question 4 what will be the output 
 // + unary operator turns true to 1 and false to zero 
 // falsy value in js 
 // 0
@@ -46,7 +47,7 @@ console.log(shape.diameter())//20
 // undefined
 // NaN (Not-a-Number)
 // Single NOT (!): Converts true to false and false to true.
-//question 4
+# question 5
 console.log(+true ,!'kaif') 
 
 //QUESTION 5
