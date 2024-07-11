@@ -1,6 +1,6 @@
 
 ```jsx
-#QUESTION 1
+# QUESTION 1
 function sayhi(){
     console.log(name)
     console.log(age)
@@ -9,8 +9,10 @@ function sayhi(){
 }
 sayhi`` //ouput is reference  error and undefined
 // hoisting is only occur in var variable
+```
+```jsx
 
-#question 2
+# question 2
 for(var i=0;i<3;i++){
     setTimeout(()=>{
         console.log(i)
@@ -20,9 +22,10 @@ for(let i=0;i<3;i++){
     setTimeout(() => {
     console.log(i)
     }, 1);
-}// due to block scope 0 1 2 
+}// due to block scope 0 1 2
+```
 
-#QUESTION 3
+# QUESTION 3
 const shape={
     radius:10,
     diameter(){
