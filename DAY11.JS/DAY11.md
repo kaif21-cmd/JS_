@@ -1,6 +1,6 @@
-
-```jsx
 # QUESTION 1
+```jsx
+
 function sayhi(){
     console.log(name)
     console.log(age)
@@ -10,9 +10,8 @@ function sayhi(){
 sayhi`` //ouput is reference  error and undefined
 // hoisting is only occur in var variable
 ```
+# Question 2
 ```jsx
-
-# question 2
 for(var i=0;i<3;i++){
     setTimeout(()=>{
         console.log(i)
@@ -26,6 +25,7 @@ for(let i=0;i<3;i++){
 ```
 
 # QUESTION 3
+```jsx
 const shape={
     radius:10,
     diameter(){
@@ -38,8 +38,10 @@ const shape={
 }
 console.log(shape.perimeter())// so it will so Nan //due pi oyherwise it show reference error
 console.log(shape.diameter())//20
+```
 
-#question 4 what will be the output 
+# Question 4 what will be the output 
+```jsx
 // + unary operator turns true to 1 and false to zero 
 // falsy value in js 
 // 0
@@ -50,7 +52,9 @@ console.log(shape.diameter())//20
 // undefined
 // NaN (Not-a-Number)
 // Single NOT (!): Converts true to false and false to true.
+```
 # question 5
+```jsx
 console.log(+true ,!'kaif') 
 
 //QUESTION 5
@@ -62,24 +66,30 @@ let d=c;
 // let d={...c} now it will give hey
 c.greeting='hello'
 console.log(d.greeting)
-//output hello due to refernce type 
+//output hello due to refernce type
+```
 
-// //QUESTION 6
+# QUESTION 6
+```jxx
 let a=3;
 let b=new Number(3) //new number is an built in function constructor it look like a number nbut it is not a number it is an object
 let c=3;
 console.log(a==b)//true
 console.log(a===b)//false beacuase different data type 
 console.log(b===c)//false different data types
+```
 
-//question 7
+# Question 7
+```jsx
 let greeting;
 greeting={
 
 }
 console.log(greeting)
+```
 
-//QUESTION 8 
+# QUESTION 8 
+```jsx
 function Person(firstname, lastname) {
     this.firstname = firstname;
     this.lastname = lastname;
@@ -91,7 +101,7 @@ function Person(firstname, lastname) {
 const member = new Person('kaif', 'siddique');
 console.log(member.getfullname()); //KAIF SIDDIQUE 
 
-//QUESTION 9 WHAT IF 
+ # QUESTION 9 WHAT IF 
 function Person(firstname,lastname){
     this.firstname=firstname
     this.lastname=lastname
@@ -104,9 +114,11 @@ console.log(member.getFullname()) //it will show type error
 //because object ke andr aisa ko function  ni hai but we can fix this by using 
 //person.prototype.getFullname //with help prototype keyword we can fix this 
 //In JavaScript, the prototype keyword is used to add properties and methods to constructors. This allows all instances created by that constructor to inherit these properties and methods, which is a key feature of JavaScript's prototype-based inheritance model.
+```
 
 
-//QUESTION 10
+# QUESTION 10
+```jsx
 function sum(a,b){
     return a+b;
 }
@@ -116,8 +128,9 @@ console.log(result)//12 string
 let num=0;
 console.log(num++);//post incremnet
 console.log(++num)//2 1+1=2 
-console.log(num)//2 
-// Step 1: console.log(num++);
+console.log(num)//2
+
+ Step 1: console.log(num++);
 // num++ is the post-increment operator. This means that the value of num is used first, and then it is incremented.
 // Initially, num is 0.
 // console.log(num++) prints the current value of num, which is 0.
@@ -130,6 +143,7 @@ console.log(num)//2
 // ++num increments num to 2.
 // console.log(++num) prints the new value of num, which is 2.
 // Output: 2
+```
 
 // Step 3: console.log(num);
 // At this point, num has already been incremented to 2 in the previous step.
