@@ -75,3 +75,10 @@ All object keys (excluding Symbols) are strings under the hood, even if you don'
 
 It doesn't work that way for a set. There is no '1' in our set: set.has('1') returns false. It has the numeric type 1, set.has(1) returns true.
 ```
+# QUESTION 7
+
+```jsx
+const obj = { a: 'one', b: 'two', a: 'three' };
+console.log(obj);
+If you have two keys with the same name, the key will be replaced. It will still be in its first position, but with the last specified value.
+```
