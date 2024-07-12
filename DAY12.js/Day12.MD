@@ -53,3 +53,10 @@ In JavaScript, when you declare a variable without specifying let, var, or const
 
 with the help of strict keyword we can not declare a  gloabal varible  or we can not declare a varible with their type it will show error  reference error
 ```
+# QUESTION 5
+
+```jsx
+const sum = eval('10*10+5');
+console.log(sum)
+// eval evaluates code that's passed as a string. If it's an expression, like in this case, it evaluates the expression. The expression is 10 * 10 + 5. This returns the number 105.
+```
