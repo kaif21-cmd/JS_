@@ -82,3 +82,44 @@ const obj = { a: 'one', b: 'two', a: 'three' };
 console.log(obj);
 If you have two keys with the same name, the key will be replaced. It will still be in its first position, but with the last specified value.
 ```
+# QUESTION 8
+```jsx
+for (let i = 1; i < 5; i++) {
+  if (i === 3) continue;
+  console.log(i);
+}
+continue statement is use for skiping the values
+
+```
+# Question 9
+```jsx
+what are falsy values ?
+0;
+new Number(0);
+('');
+(' ');
+new Boolean(false);
+undefined;
+There are 8 falsy values:
+
+undefined
+null
+NaN
+false
+'' (empty string)
+0
+-0
+0n (BigInt(0))
+Function constructors, like new Number and new Boolean are truthy.
+
+```
+# Question 10
+```jsx
+const numbers = [1, 2, 3];
+numbers[10] = 11;
+console.log(numbers);
+
+#ouput:
+When you set a value to an element in an array that exceeds the length of the array, JavaScript creates something called "empty slots". These actually have the value of undefined, but you will see something like:
+```
+
