@@ -37,3 +37,19 @@ function getAge(...args) {
 
 getAge(21); //[] array is object 
 ```
+# QUESTION 4 
+```jsx
+function getAge() {
+  'use strict';
+  age = 21;
+  console.log(age);
+}
+
+getAge();
+what is global?
+if you declare a varibale outside 
+what is iplicit global?
+In JavaScript, when you declare a variable without specifying let, var, or const, the variable is automatically declared as global (if not inside a function) or local (if inside a function). This behavior is called "implicit global" or "global leakage."
+
+with the help of strict keyword we can not declare a  gloabal varible  or we can not declare a varible with their type it will show error  reference error
+```
