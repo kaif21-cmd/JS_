@@ -1,5 +1,5 @@
 
-### DAY 12 
+# DAY 12 
 # QUESTION 1
 ```jsx
 function checkAge(data) {
