@@ -28,3 +28,12 @@ getadd(2+2+2+2+2+2+2+2+2+2)
 # Rest Operator allows you to represent an indefinite number of arguments as an array. It's particularly useful in function definitions to handle variable-length argument lists.
 
 ```
+# QUESTION 3
+
+```jsx
+function getAge(...args) {
+  console.log(typeof args);
+}
+
+getAge(21); //[] array is object 
+```
