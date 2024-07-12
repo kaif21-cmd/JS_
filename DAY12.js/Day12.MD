@@ -25,6 +25,6 @@ function getadd(...add){
 }
 getadd(2+2+2+2+2+2+2+2+2+2)
 //ouput [20] give in the form of array 
-***Rest Operator***  allows you to represent an indefinite number of arguments as an array. It's particularly useful in function definitions to handle variable-length argument lists.
+# Rest Operator allows you to represent an indefinite number of arguments as an array. It's particularly useful in function definitions to handle variable-length argument lists.
 
 ```
