@@ -1,11 +1,19 @@
+# Day 13
+# Question 1
+```jsx
 console.log(!!null) //null is falsy !falsy->truthy !truthy-falsy
 console.log(!!'')//'' empty string is falsy same as first one 
 console.log(!!1) // i1 is truthy value here and !truthy-falsy-> again !falsy-truhty
 // false false truthy
-
+```
+# Question 2
+```jsx
 console.log([...'kaif'])
 // [ 'k', 'a', 'i', 'f' ]
 // spread operator will seperate each alabhabet and return new array
+```
+# Question 3
+```jsx
 
 const firstPromise = new Promise((res, rej) => {
     setTimeout(res, 500, 'one');
@@ -17,7 +25,9 @@ const firstPromise = new Promise((res, rej) => {
   
   Promise.race([firstPromise, secondPromise]).then(res => console.log(res));
   //promise.race methord it will rej or resolve only whiich have very low time 
-
+```
+# QUESTION 4
+```jsx
   const person = {
     name: 'Lydia',
     age: 21,
@@ -32,6 +42,9 @@ const firstPromise = new Promise((res, rej) => {
     return { make: 'Maserati' }
   }
   //the constructor function Car explicitly returns a new object with make set to "Maserati", which overrides the default behavior. Therefore, when new Car() is called, the returned object is assigned to myCar, resulting in the output being "Maserati" when myCar.make is accessed.
+```
+# QUESTION 5
+```jsx
   (() => {
     let x = (y = 10);
     //this expression look
@@ -44,8 +57,10 @@ const firstPromise = new Promise((res, rej) => {
 console.log(x) //referce error 
 console.log(typeof x);  //x=y undefined
 console.log(typeof y)//y =10 number
+```
 
-//7
+# QUESTION 6 
+```jsx
 class Dog {
     constructor(name) {
       this.name = name;
@@ -63,14 +78,16 @@ class Dog {
   delete Dog.prototype.bark;
   
   pet.bark();
-
-  //8 
+```
+# QUESTION 7
+```jsx
   const set = new Set([1, 1, 2, 3, 4]);
 
 console.log(set);
 //The Set object is a collection of unique values: a value can only occur once in a set.
-
-//9
+```
+# Question 8
+```jsx
 const name = 'Lydia';
 age = 21;
 
@@ -79,15 +96,18 @@ console.log(delete age);//true
 //delete operator is used to delete the property from an object 
 // and if you declare a variable without the name is treated as global object 
 //on perfectly deletion it will return the true otherwise false
-
-//10
+```
+# QUESTION 9
+```jsx
 const user = { name: 'Lydia', age: 21 };
 const admin = { admin: true, ...user };
 
 console.log(admin);
 //{ admin: true, name: "Lydia", age: 21 }
+```
 
-//11
+# Question 10
+```jsx
 const persons = { name: 'Lydia' };
 
 Object.defineProperty(persons, 'age', { value: 21 });
@@ -97,6 +117,9 @@ console.log(Object.keys(persons)); //return only name
 //correct way
 console.log(Object.getOwnPropertyNames(person)); // ['name', 'age']
 // With the defineProperty method, we can add new properties to an object, or modify existing ones. When we add a property to an object using the defineProperty method, they are by default not enumerable. The Object.keys method returns all enumerable property names from an object, in this case only "name".
+```
+# QUESTION 11
+```jsx
 const settings = {
     username: 'lydiahallie',
     level: 19,
@@ -105,7 +128,9 @@ const settings = {
   
   const data = JSON.stringify(settings, ['level', 'health']);
   console.log(data);
-  //13
+```
+# Question 12
+```jsx
   let num = 10;
 
 const increaseNumber = () => num++;
@@ -119,5 +144,6 @@ console.log(num2);
 let num=10;
 console.log(num++)//10
 console.log(++num)//12
+```
 
 
