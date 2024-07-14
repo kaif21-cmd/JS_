@@ -1,9 +1,12 @@
+# DAY 14
+# QUESTION 1
+```jsx
 console.log(Number(2) === Number(2));//true
 console.log(Boolean(false) === Boolean(false));//true
 console.log(Symbol('foo') === Symbol('foo'));//false
 //Each symbol has unique values 
 // The value of the Symbol is not dependent on the passed argument. As we test equality, we are creating two entirely new symbols: the first Symbol('foo'), and the second Symbol('foo'). These two values are unique and not equal to each other, Symbol('foo') === Symbol('foo') returns false.
-
+```
 //2
 const name = 'Kaif';
 console.log(name.padStart(13));
