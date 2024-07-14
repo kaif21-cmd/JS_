@@ -7,7 +7,8 @@ console.log(Symbol('foo') === Symbol('foo'));//false
 //Each symbol has unique values 
 // The value of the Symbol is not dependent on the passed argument. As we test equality, we are creating two entirely new symbols: the first Symbol('foo'), and the second Symbol('foo'). These two values are unique and not equal to each other, Symbol('foo') === Symbol('foo') returns false.
 ```
-//2
+# QUESTION 2
+```jsx
 const name = 'Kaif';
 console.log(name.padStart(13));
 console.log(name.padStart(15));
@@ -16,8 +17,9 @@ console.log(name.padStart(2))
 // pad start methord give the padding in the string
 //With the padStart method, we can add padding to the beginning of a string. The value passed to this method is the total length of the string together with the padding. The string "Lydia Hallie" has a length of 12. name.padStart(13) inserts 1 space at the start of the string, because 12 + 1 is 13.
 //If the argument passed to the padStart method is smaller than the length of the array, no padding will be added.
-
-//3
+```
+# Question 3
+```jsx
 const box = { x: 10, y: 20 };
 
 Object.freeze(box);
@@ -28,8 +30,10 @@ shape.x = 100;
 console.log(shape); //x: 10, y: 20
 console.log(Object.isFrozen(shape))//true type boolean
 //freze methord makes it impossible to add, remove, or modify properties of an object (unless the property's value is another object).
+```
 
-//4
+# Question 4
+```jsx
 //for in loop or for of loop
 const myLifeSummedUp = ['☕', '💻', '🍷', '🍫'];
 
@@ -43,7 +47,8 @@ for (let item of myLifeSummedUp) {
   console.log(item);
 }
 //"☕" "💻" "🍷" "🍫"
-//of give items of array usef for ietrate on array 
+//of give items of array usef for ietrate on array
+```
 
 //5
 const list = [1 + 2, 1 * 2, 1 / 2];
