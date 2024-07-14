@@ -50,21 +50,25 @@ for (let item of myLifeSummedUp) {
 //of give items of array usef for ietrate on array
 ```
 
-//5
+# question 5
+```jsx
 const list = [1 + 2, 1 * 2, 1 / 2];
 console.log(list);//3,2,0.5
 //Array elements can hold any value. Numbers, strings, objects, other arrays, null, boolean values, undefined, and other expressions such as dates, functions, and calculations.
-
-//6
+```
+# question 6
+```jsx
 function sayHi(name) {
     return `Hi there, ${name}`;
   }
   
   console.log(sayHi());
   //hi there undefined because we not pass a value in arguments
-  //in es6 it is possiblefunction sayHi(name = "Lydia") 
+  //in es6 it is possiblefunction sayHi(name = "Lydia")
+```
 
-  //7
+# question 7
+```jsx
   var status = '😎';
 
 setTimeout(() => {
@@ -83,6 +87,7 @@ setTimeout(() => {
 //1 avocado print because of in onject this kewprd is used extracxt proprty in methords
 //2 happy face 😍 print because using call this bellong to global object and var having priority to print
 
+```
 //8
 // function checkAge(age) {
 //     if (age < 18) {
