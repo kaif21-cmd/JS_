@@ -88,18 +88,19 @@ setTimeout(() => {
 //2 happy face 😍 print because using call this bellong to global object and var having priority to print
 
 ```
-//8
+# question 8
+```jsx
 // function checkAge(age) {
-//     if (age < 18) {
-//       const message = "Sorry, you're too young.";
-//     } else {
-//       const message = "Yay! You're old enough!";
-//     }
+    if (age < 18) {
+      const message = "Sorry, you're too young.";
+    } else {
+       const message = "Yay! You're old enough!";
+    }
   
-//     return message;
-//   }
+    return message;
+   }
   
-//   console.log(checkAge(21));
+   console.log(checkAge(21));//erroe
 //Variables with the const and let keywords are block-scoped. A block is anything between curly brackets ({ }). In this case, the curly brackets of the if/else statements. You cannot reference a variable outside of the block it's declared in, a ReferenceError gets thrown.
 
 //corected way
@@ -115,13 +116,16 @@ function checkAge(age) {
   
   console.log(checkAge(21));
   //Yay! You're old enough!
-
-//9
+```
+# question 9
+```jsx
 console.log('I want pizza'[0]);
 //In order to get a character at a specific index of a string, you can use bracket notation. The first character in the string has index 0, and so on.
 //also do with .charAt().
+```
 
-//10
+# question 10
+```jsx
 class Person {
     constructor(name) {
       this.name = name;
@@ -131,7 +135,7 @@ class Person {
   const member = new Person('John');
   console.log(typeof member);
   //object
-
+```
 
  
 
