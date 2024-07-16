@@ -58,6 +58,8 @@ function giveLydiaPizza() {
 //The first subarray is [ "name", "Lydia" ], with x equal to "name", and y equal to "Lydia", which get logged. The second subarray is [ "age", 21 ], with x equal to "age", and y equal to 21, which get logged.
 ```
 //5 
+# Question 5
+```jsx
 function getItems(fruitList, ...args, favoriteFruit) {
     return [...fruitList, ...args, favoriteFruit]
   }
@@ -65,16 +67,20 @@ function getItems(fruitList, ...args, favoriteFruit) {
   getItems(["banana", "apple"], "pear", "orange")
   //har function me last parameter sirf rest operator hoga agar wo last ni hai to error dega
   //error
+```
 
-//6
+# Question 5
+```jsx
 function getItems(fruitList, favoriteFruit, ...args) {
     return [...fruitList, ...args, favoriteFruit];
   }
   
   getItems(['banana', 'apple'], 'pear', 'orange');
 //[ 'banana', 'apple', 'orange', 'pear' ]
+```
 
-//7
+# Question 6
+```jsx
 function nums(a, b) {
     if (a > b) console.log('a is bigger');
     else console.log('b is bigger');
@@ -84,3 +90,4 @@ function nums(a, b) {
   
   console.log(nums(4, 2));
   console.log(nums(1, 2));
+```
