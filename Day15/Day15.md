@@ -13,16 +13,17 @@ class Person {
 //object
 ```
 # question 2
+```jsx
 //2
 // let newList = [1, 2, 3].push(4);sss
 
 // console.log(newList.push(5));
 //The .push method returns the new length of the array, not the array itself! By setting newList equal to [1, 2, 3].push(4), we set newList equal to the new length of the array: 4.
 //Then, we try to use the .push method on newList. Since newList is the numerical value 4, we cannot use the .push method: a TypeError is thrown.
+```
 
-
-
-//3 
+# Question 3
+```jsx
 function giveLydiaPizza() {
     return 'Here is pizza!';
   }
@@ -35,7 +36,9 @@ function giveLydiaPizza() {
   //normal function ke pass prototype property hoti hai
   //arrow function ke pass ni hoti
   //Regular functions, such as the giveLydiaPizza function, have a prototype property, which is an object (prototype object) with a constructor property. Arrow functions however, such as the giveLydiaChocolate function, do not have this prototype property. undefined gets returned when trying to access the prototype property using giveLydiaChocolate.prototype.
-  
+  ```
+# Quwestion 4
+```jsx
   //4
   const person = {
     name: 'Kaif',
@@ -53,7 +56,7 @@ function giveLydiaPizza() {
 //[ [ 'name', 'Lydia' ], [ 'age', 21 ] ]
 //Using the for-of loop, we can iterate over each element in the array, the subarrays in this case. We can destructure the subarrays instantly in the for-of loop, using const [x, y]. x is equal to the first element in the subarray, y is equal to the second element in the subarray.
 //The first subarray is [ "name", "Lydia" ], with x equal to "name", and y equal to "Lydia", which get logged. The second subarray is [ "age", 21 ], with x equal to "age", and y equal to 21, which get logged.
-
+```
 //5 
 function getItems(fruitList, ...args, favoriteFruit) {
     return [...fruitList, ...args, favoriteFruit]
