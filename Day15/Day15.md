@@ -91,3 +91,50 @@ function nums(a, b) {
   console.log(nums(4, 2));
   console.log(nums(1, 2));
 ```
+# question 7 
+```jsx
+function getItems(fruitList, favoriteFruit, ...args) {
+    return [...fruitList, ...args, favoriteFruit];
+  }
+  
+  getItems(['banana', 'apple'], 'pear', 'orange');
+//[ 'banana', 'apple', 'orange', 'pear' ]
+```
+# question 8 
+```jsx
+const name = 'Lydia';
+
+console.log(name());
+//typeeror
+//The variable name holds the value of a string, which is not a function, and thus cannot be invoked
+
+```
+# question 9
+```jsx
+const one = false || {} || null;
+const two = null || false || '';
+const three = [] || 0 || true;
+
+console.log(one, two, three);
+//With the || operator, we can return the first truthy operand. If all values are falsy, the last operand gets returned.
+//{},'',[]
+```
+
+//9
+console.log('❤️' === '❤️');
+//Under the hood, emojis are unicodes. The unicodes for the heart emoji is "U+2764 U+FE0F"
+
+
+//10
+let name = 'Lydia';
+
+function getName() {
+  console.log(name);
+  let name = 'Sarah';
+}
+
+getName();
+//Refrence Error
+//if decalre with var then it show undefined
+
+
