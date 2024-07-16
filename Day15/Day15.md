@@ -120,18 +120,21 @@ console.log(one, two, three);
 //{},'',[]
 ```
 
-//9
+# Question 9
+```jsx
 console.log('❤️' === '❤️');
 //Under the hood, emojis are unicodes. The unicodes for the heart emoji is "U+2764 U+FE0F"
+```
 
-
-//10
+# Question 10
+```jsx
 let name = 'Lydia';
 
 function getName() {
   console.log(name);
   let name = 'Sarah';
 }
+```
 
 getName();
 //Refrence Error
