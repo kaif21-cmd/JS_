@@ -1,4 +1,6 @@
-//1
+# Day 15
+# question 1
+```jsx
 class Person {
     constructor(name) {
       this.name = name;
@@ -8,8 +10,9 @@ class Person {
   const member = new Person('John');
   console.log(typeof member);
 // Classes are syntactical sugar for function constructors. The equivalent of the Person class as a function constructor would be:
-//object 
-
+//object
+```
+# question 2
 //2
 // let newList = [1, 2, 3].push(4);sss
 
