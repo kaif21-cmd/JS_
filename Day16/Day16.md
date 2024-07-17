@@ -1,6 +1,7 @@
-//For Each Methord In js 
+ # For Each Methord In js 
 //We use forEach when we like to iterate through an array of items. The forEach is a higher-order function and it takes call-back as a parameter. The forEach method is used only with array and we use forEach
-//[ 'FINLAND', 'ESTONIA', 'SWEDEN', 'NORWAY' ]
+
+```jsx
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
 countries.forEach((country,i)=>{
     console.log(i,country.toUpperCase())
@@ -9,7 +10,10 @@ countries.forEach((country,i)=>{
 // 1 ESTONIA
 // 2 SWEDEN
 // 3 NORWAY
- 
+```
+
+# 2
+ ```jsx
 const number=[1,2,3,4,5]
 let sum=0
 number.forEach((n)=>{
@@ -17,16 +21,23 @@ number.forEach((n)=>{
 })
 
 console.log(sum)//15
+```
 
-//2 Map methord
-//We use the map method whenever we like to modify an array. We use the map method only with arrays and it always returns an array
+#  Map methord
+We use the map method whenever we like to modify an array. We use the map method only with arrays and it always returns an array
+```jsx
 const country=['Finland', 'Estonia', 'Sweden', 'Norway']
 const New=country.map(n=>n.toUpperCase())
 console.log(New)
 //[ 'FINLAND', 'ESTONIA', 'SWEDEN', 'NORWAY' ]
+```
 
-//3 As you can see that map is very handy to modify an array and to get an array back. Now, let us create an array of the length of the countries from the countries array.
+
+#3
+As you can see that map is very handy to modify an array and to get an array back. Now, let us create an array of the length of the countries from the countries array.
+```jsx
 const contries = ['Finland', 'Estonia', 'Sweden', 'Norway']
+
 const contriesLength = countries.map(contry => contry.length)
 
 console.log(contriesLength) // [7, 7, 6, 6]
@@ -36,7 +47,7 @@ const squares = numberss.map(n => n ** 2)
 
 console.log(squares) 
 // [1, 4, 9, 16, 25]
-
+```
 //As you may understand from the literal meaning of filter, it filters out items based on some criteria. The filter method like forEach and map is used with an array and it returns an array of the filtered items.
 const kaifcountries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const countriesWithLand = kaifcountries.filter(n=>!n.includes('land'))
