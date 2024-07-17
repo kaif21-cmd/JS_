@@ -1,5 +1,5 @@
  # For Each Methord In js 
-//We use forEach when we like to iterate through an array of items. The forEach is a higher-order function and it takes call-back as a parameter. The forEach method is used only with array and we use forEach
+We use forEach when we like to iterate through an array of items. The forEach is a higher-order function and it takes call-back as a parameter. The forEach method is used only with array and we use forEach
 
 ```jsx
 const countries = ['Finland', 'Estonia', 'Sweden', 'Norway']
@@ -48,14 +48,16 @@ const squares = numberss.map(n => n ** 2)
 console.log(squares) 
 // [1, 4, 9, 16, 25]
 ```
-//As you may understand from the literal meaning of filter, it filters out items based on some criteria. The filter method like forEach and map is used with an array and it returns an array of the filtered items.
+# filter methord 
+As you may understand from the literal meaning of filter, it filters out items based on some criteria. The filter method like forEach and map is used with an array and it returns an array of the filtered items.
+```jsx
 const kaifcountries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
 const countriesWithLand = kaifcountries.filter(n=>!n.includes('land'))
 console.log(countriesWithLand) 
 // ["Estonia", "Sweden", "Norway"]
 const countriesWithLands = kaifcountries.filter(n=>n.includes('land'))
 // finland iceland 
-
+```
 //5
 const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 const evens = numbers.filter(n => n % 2 === 0)
