@@ -95,4 +95,3 @@ const value = numbers.reduce((acc, cur) => acc * cur, 10)
 console.log(value) // 1200
 ```jsx
 
-```
