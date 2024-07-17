@@ -94,3 +94,30 @@ const numbers = [1, 2, 3, 4, 5]
 const value = numbers.reduce((acc, cur) => acc * cur, 10)
 console.log(value) // 1200
 ```
+
+# Find Methord
+If we are interested in the first occurrence of a certain item or element in an array we can use find method. Unlike map and filter,
+agar hma filter map methord use krenge to first occurence nmi milega 
+```jsx
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const firstEvenNum = numbers.find((n) => n % 2 === 0)
+const firstOddNum = numbers.find((n) => n % 2 !== 0)
+console.log(firstEvenNum)  // 0
+console.log(firstOddNum)
+```
+ # Let us find the first country which has only six characters
+```jsx
+const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
+const sixCharsCountry = countries.find((country) => country.length === 6)
+console.log(sixCharsCountry)
+// Sweden
+```
+
+# Let us find the first country in the array which has the letter 'o'
+```jsx
+
+const countries = ['Finland', 'Estonia', 'Sweden', 'Norway', 'Iceland']
+const index = countries.find((country) => country.includes('o'))
+console.log(index )
+
+```
