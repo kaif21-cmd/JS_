@@ -65,3 +65,34 @@ const odds = numbers.filter(n => n % 2 !== 0)
 console.log(evens) // [0, 2, 4, 6, 8, 10]
 console.log(odds) // [1, 3, 5, 7, 9]
 ```
+# Reduce Methord
+Like forEach, map, and filter, reduce is also used with an array and it returns a single value. You can associate reduce with a blender
+The default initial value is 0. We can change the initial value if we want to change it.
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+```jsx
+const numbers = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const sum = numbers.reduce((acc, cur) => acc + cur)
+console.log(sum) // 55
+const numberss = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+const sums = numberss.reduce((acc, cur) => acc + cur, 5)
+console.log(sums) // 60
+```
+```jsx
+Let us concatenate strings using reduce
+const strs = ['Hello', 'world', '!']
+const helloWorld = strs.reduce((acc, cur) => acc + ' '+  cur)
+console.log(helloWorld) // "Hello world !"
+```
+```jsx
+const numbers = [1, 2, 3, 4, 5]
+const value = numbers.reduce((acc, cur) => acc * cur)
+console.log(value) // 120
+
+```
+
+const numbers = [1, 2, 3, 4, 5]
+const value = numbers.reduce((acc, cur) => acc * cur, 10)
+console.log(value) // 1200
+```jsx
+
+```
