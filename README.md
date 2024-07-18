@@ -19,10 +19,10 @@ Welcome to my JavaScript Learning Journey! This repository contains my daily pro
 | Day 8| Javascrpit day 8                   | [Forms](https://github.com/kaif21-cmd/JS_/blob/main/Methord.js)                                             |
 | Day 9| Javascrpit day 9                  | [Lifting State Up](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
 | Day 10| Javascrpit day 10       | [Composition vs Inheritance](https://github.com/kaif21-cmd/JS_/tree/main/DAY10.JS)   |
-| Day 11| Javascrpit day 11               | [Thinking in React](https://github.com/kaif21-cmd/JS_/blob/main/DAY11.JS/DAY11.md)                   |
+| Day 11| Javascrpit day 11               | [Thinking in React](https://github.com/kaif21-cmd/JS_/blob/main/DAY12.js/Day12.MD)                   |
 | Day 12| Javascrpit day 12                      | [React Router](https://github.com/kaifshaikh262000/react-learning/blob/main/day12/react-router.md)                             |
-| Day 13| Javascrpit day 13                   | [Code Splitting](https://github.com/kaifshaikh262000/react-learning/blob/main/day13/code-splitting.md)                         |
-| Day 14| Javascrpit day 14                           | [Context](https://github.com/kaifshaikh262000/react-learning/blob/main/day14/context.md)                                       |
+| Day 13| Javascrpit day 13                   | [Code Splitting](https://github.com/kaif21-cmd/JS_/blob/main/Day13/Day13.md)                         |
+| Day 14| Javascrpit day 14                           | [Context](https://github.com/kaif21-cmd/JS_/blob/main/Day14/Day14.md)                                       |
 | Day 15| Javascrpit day 15                  | [Hooks - useState](https://github.com/kaifshaikh262000/react-learning/blob/main/day15/hooks-usestate.md)                       |
 | Day 16| Javascrpit day 16                | [Hooks - useEffect](https://github.com/kaifshaikh262000/react-learning/blob/main/day16/hooks-useeffect.md)                     |
 | Day 17| Javascrpit day 17                     | [Custom Hooks](https://github.com/kaifshaikh262000/react-learning/blob/main/day17/custom-hooks.md)                             |
