@@ -10,25 +10,23 @@ Welcome to my JavaScript Learning Journey! This repository contains my daily pro
 | Day  | Topic                              | Link                                                                                          |
 |------|------------------------------------|-----------------------------------------------------------------------------------------------|
 | Day 1| Javascrpit day 1              | [day1 ](https://github.com/kaif21-cmd/JS_/tree/main/DAY1.JS)                     |
-| Day 2| Javascrpit day 2         | [JSX and Rendering Elements](https://github.com/kaif21-cmd/JS_/tree/main/DAY2.JS)               |
-| Day 3| Javascrpit day 3              | [Components and Props](https://github.com/kaif21-cmd/JS_/tree/main/DAY3.JS)                 |
-| Day 4|  Javascrpit day 4              | [State and Lifecycle](https://github.com/kaif21-cmd/JS_/tree/main/DAY4.JS)                   |
-| Day 5|  Javascrpit day 5                  | [Handling Events](https://github.com/kaif21-cmd/JS_/tree/main/DAY5.JS)                       |
-| Day 6| Javascrpit day 6            | [Conditional Rendering](https://github.com/kaif21-cmd/JS_/tree/main/DAY6.JS)           |
-| Day 7| Javascrpit day 7                      | [Lists and Keys](https://github.com/kaif21-cmd/JS_/tree/main/DAY7.JS)                             |
-| Day 8| Javascrpit day 8                   | [Forms](https://github.com/kaif21-cmd/JS_/blob/main/Methord.js)                                             |
-| Day 9| Javascrpit day 9                  | [Lifting State Up](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
-| Day 10| Javascrpit day 10       | [Composition vs Inheritance](https://github.com/kaif21-cmd/JS_/tree/main/DAY10.JS)   |
-| Day 11| Javascrpit day 11               | [Thinking in React](https://github.com/kaif21-cmd/JS_/blob/main/DAY12.js/Day12.MD)                   |
-| Day 12| Javascrpit day 12                      | [React Router](https://github.com/kaifshaikh262000/react-learning/blob/main/day12/react-router.md)                             |
-| Day 13| Javascrpit day 13                   | [Code Splitting](https://github.com/kaif21-cmd/JS_/blob/main/Day13/Day13.md)                         |
-| Day 14| Javascrpit day 14                           | [Context](https://github.com/kaif21-cmd/JS_/blob/main/Day14/Day14.md)                                       |
-| Day 15| Javascrpit day 15                  | [Hooks - useState](https://github.com/kaifshaikh262000/react-learning/blob/main/day15/hooks-usestate.md)                       |
-| Day 16| Javascrpit day 16                | [Hooks - useEffect](https://github.com/kaifshaikh262000/react-learning/blob/main/day16/hooks-useeffect.md)                     |
-| Day 17| Javascrpit day 17                     | [Custom Hooks](https://github.com/kaifshaikh262000/react-learning/blob/main/day17/custom-hooks.md)                             |
-| Day 18|Javascrpit day 18                          | [Refs](https://github.com/kaifshaikh262000/react-learning/blob/main/day18/refs.md)                                             |
-| Day 19|Javascrpit day 19                | [React Performance](https://github.com/kaifshaikh262000/react-learning/blob/main/day19/react-performance.md)                   |
-| Day 20| Javascrpit day 20                          | [Testing](https://github.com/kaifshaikh262000/react-learning/blob/main/day20/testing.md)                                       |
+| Day 2| Javascrpit day 2         | [day2](https://github.com/kaif21-cmd/JS_/tree/main/DAY2.JS)               |
+| Day 3| Javascrpit day 3              | [day3](https://github.com/kaif21-cmd/JS_/tree/main/DAY3.JS)                 |
+| Day 4|  Javascrpit day 4              | [day4](https://github.com/kaif21-cmd/JS_/tree/main/DAY4.JS)                   |
+| Day 5|  Javascrpit day 5                  | [day5](https://github.com/kaif21-cmd/JS_/tree/main/DAY5.JS)                       |
+| Day 6| Javascrpit day 6            | [day6](https://github.com/kaif21-cmd/JS_/tree/main/DAY6.JS)           |
+| Day 7| Javascrpit day 7                      | [day37](https://github.com/kaif21-cmd/JS_/tree/main/DAY7.JS)                             |
+| Day 8| Javascrpit day 8                   | [day8](https://github.com/kaif21-cmd/JS_/blob/main/Methord.js)                                             |
+| Day 9| Javascrpit day 9                  | [day9](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
+| Day 10| Javascrpit day 10       | [day10](https://github.com/kaif21-cmd/JS_/tree/main/DAY10.JS)   |
+| Day 11| Javascrpit day 11               | [day11](https://github.com/kaif21-cmd/JS_/blob/main/DAY12.js/Day12.MD)                   |
+| Day 12| Javascrpit day 12                      | [day12](https://github.com/kaifshaikh262000/react-learning/blob/main/day12/react-router.md)                             |
+| Day 13| Javascrpit day 13                   | [day13](https://github.com/kaif21-cmd/JS_/blob/main/Day13/Day13.md)                         |
+| Day 14| Javascrpit day 14                           | [day14](https://github.com/kaif21-cmd/JS_/blob/main/Day14/Day14.md)                                       |
+| Day 15| Javascrpit day 15                  | [day15](https://github.com/kaif21-cmd/JS_/blob/main/Day15/Day15.md)                       |
+| Day 16| Javascrpit day 16                | [dat16](https://github.com/kaif21-cmd/JS_/blob/main/Day16/Day16.md)                     |
+| Day 17| Javascrpit day 17                     | [day17](https://github.com/kaif21-cmd/JS_/blob/main/comparison.js)                             |
+
 
 
 
