@@ -3,32 +3,34 @@
 </p>
 # React Learning Journey
 
-Welcome to my React Learning Journey! This repository contains my daily progress and topics covered from Day 1 to Day 20. Each day includes links to the specific files and topics I worked on.
+Welcome to my JavaScript Learning Journey! This repository contains my daily progress and topics covered  Questions from Day 1 to Day .... Each day includes links to the specific files and topics I worked on.
 
 ## Table of Contents
 
-| Day  | Link                                                                                          |
-|------|-----------------------------------------------------------------------------------------------|
-| Day 1| [Day 1](https://github.com/kaifshaikh262000/react-learning/blob/main/day1/introduction.md)                     |
-| Day 2| [Day 2](https://github.com/kaifshaikh262000/react-learning/blob/main/day2/jsx-rendering.md)               |
-| Day 3| [Day 3](https://github.com/kaifshaikh262000/react-learning/blob/main/day3/components-props.md)                 |
-| Day 4| [Day 4](https://github.com/kaifshaikh262000/react-learning/blob/main/day4/state-lifecycle.md)                   |
-| Day 5| [Day 5](https://github.com/kaifshaikh262000/react-learning/blob/main/day5/handling-events.md)                       |
-| Day 6| [Day 6](https://github.com/kaifshaikh262000/react-learning/blob/main/day6/conditional-rendering.md)           |
-| Day 7| [Day 7](https://github.com/kaifshaikh262000/react-learning/blob/main/day7/lists-keys.md)                             |
-| Day 8| [Day 8](https://github.com/kaifshaikh262000/react-learning/blob/main/day8/forms.md)                                             |
-| Day 9| [Day 9](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
-| Day 10| [Day 10](https://github.com/kaifshaikh262000/react-learning/blob/main/day10/composition-inheritance.md)   |
-| Day 11| [Day 11](https://github.com/kaifshaikh262000/react-learning/blob/main/day11/thinking-in-react.md)                   |
-| Day 12| [Day 12](https://github.com/kaifshaikh262000/react-learning/blob/main/day12/react-router.md)                             |
-| Day 13| [Day 13](https://github.com/kaifshaikh262000/react-learning/blob/main/day13/code-splitting.md)                         |
-| Day 14| [Day 14](https://github.com/kaifshaikh262000/react-learning/blob/main/day14/context.md)                                       |
-| Day 15| [Day 15](https://github.com/kaifshaikh262000/react-learning/blob/main/day15/hooks-usestate.md)                       |
-| Day 16| [Day 16](https://github.com/kaifshaikh262000/react-learning/blob/main/day16/hooks-useeffect.md)                     |
-| Day 17| [Day 17](https://github.com/kaifshaikh262000/react-learning/blob/main/day17/custom-hooks.md)                             |
-| Day 18| [Day 18](https://github.com/kaifshaikh262000/react-learning/blob/main/day18/refs.md)                                             |
-| Day 19| [Day 19](https://github.com/kaifshaikh262000/react-learning/blob/main/day19/react-performance.md)                   |
-| Day 20| [Day 20](https://github.com/kaifshaikh262000/react-learning/blob/main/day20/testing.md)                                       |
+| Day  | Topic                              | Link                                                                                          |
+|------|------------------------------------|-----------------------------------------------------------------------------------------------|
+| Day 1| Javascrpit day 1              | [Introduction to React](https://github.com/kaifshaikh262000/react-learning/blob/main/day1/introduction.md)                     |
+| Day 2| Javascrpit day 2         | [JSX and Rendering Elements](https://github.com/kaifshaikh262000/react-learning/blob/main/day2/jsx-rendering.md)               |
+| Day 3| Javascrpit day 3              | [Components and Props](https://github.com/kaifshaikh262000/react-learning/blob/main/day3/components-props.md)                 |
+| Day 4|  Javascrpit day 4              | [State and Lifecycle](https://github.com/kaifshaikh262000/react-learning/blob/main/day4/state-lifecycle.md)                   |
+| Day 5|  Javascrpit day 5                  | [Handling Events](https://github.com/kaifshaikh262000/react-learning/blob/main/day5/handling-events.md)                       |
+| Day 6| Javascrpit day 6            | [Conditional Rendering](https://github.com/kaifshaikh262000/react-learning/blob/main/day6/conditional-rendering.md)           |
+| Day 7| Javascrpit day 7                      | [Lists and Keys](https://github.com/kaifshaikh262000/react-learning/blob/main/day7/lists-keys.md)                             |
+| Day 8| Javascrpit day 8                   | [Forms](https://github.com/kaifshaikh262000/react-learning/blob/main/day8/forms.md)                                             |
+| Day 9| Javascrpit day 9                  | [Lifting State Up](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
+| Day 10| Javascrpit day 10       | [Composition vs Inheritance](https://github.com/kaifshaikh262000/react-learning/blob/main/day10/composition-inheritance.md)   |
+| Day 11| Javascrpit day 11               | [Thinking in React](https://github.com/kaifshaikh262000/react-learning/blob/main/day11/thinking-in-react.md)                   |
+| Day 12| Javascrpit day 12                      | [React Router](https://github.com/kaifshaikh262000/react-learning/blob/main/day12/react-router.md)                             |
+| Day 13| Javascrpit day 13                   | [Code Splitting](https://github.com/kaifshaikh262000/react-learning/blob/main/day13/code-splitting.md)                         |
+| Day 14| Javascrpit day 14                           | [Context](https://github.com/kaifshaikh262000/react-learning/blob/main/day14/context.md)                                       |
+| Day 15| Javascrpit day 15                  | [Hooks - useState](https://github.com/kaifshaikh262000/react-learning/blob/main/day15/hooks-usestate.md)                       |
+| Day 16| Javascrpit day 16                | [Hooks - useEffect](https://github.com/kaifshaikh262000/react-learning/blob/main/day16/hooks-useeffect.md)                     |
+| Day 17| Javascrpit day 17                     | [Custom Hooks](https://github.com/kaifshaikh262000/react-learning/blob/main/day17/custom-hooks.md)                             |
+| Day 18|Javascrpit day 18                          | [Refs](https://github.com/kaifshaikh262000/react-learning/blob/main/day18/refs.md)                                             |
+| Day 19|Javascrpit day 19                | [React Performance](https://github.com/kaifshaikh262000/react-learning/blob/main/day19/react-performance.md)                   |
+| Day 20| Javascrpit day 20                          | [Testing](https://github.com/kaifshaikh262000/react-learning/blob/main/day20/testing.md)                                       |
+
+
 
 # Comprehensive JavaScript Coding Challenges Repository 🚀
 
