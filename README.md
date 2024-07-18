@@ -10,16 +10,16 @@ Welcome to my JavaScript Learning Journey! This repository contains my daily pro
 | Day  | Topic                              | Link                                                                                          |
 |------|------------------------------------|-----------------------------------------------------------------------------------------------|
 | Day 1| Javascrpit day 1              | [day1 ](https://github.com/kaif21-cmd/JS_/tree/main/DAY1.JS)                     |
-| Day 2| Javascrpit day 2         | [JSX and Rendering Elements](https://github.com/kaifshaikh262000/react-learning/blob/main/day2/jsx-rendering.md)               |
-| Day 3| Javascrpit day 3              | [Components and Props](https://github.com/kaifshaikh262000/react-learning/blob/main/day3/components-props.md)                 |
-| Day 4|  Javascrpit day 4              | [State and Lifecycle](https://github.com/kaifshaikh262000/react-learning/blob/main/day4/state-lifecycle.md)                   |
-| Day 5|  Javascrpit day 5                  | [Handling Events](https://github.com/kaifshaikh262000/react-learning/blob/main/day5/handling-events.md)                       |
-| Day 6| Javascrpit day 6            | [Conditional Rendering](https://github.com/kaifshaikh262000/react-learning/blob/main/day6/conditional-rendering.md)           |
-| Day 7| Javascrpit day 7                      | [Lists and Keys](https://github.com/kaifshaikh262000/react-learning/blob/main/day7/lists-keys.md)                             |
-| Day 8| Javascrpit day 8                   | [Forms](https://github.com/kaifshaikh262000/react-learning/blob/main/day8/forms.md)                                             |
+| Day 2| Javascrpit day 2         | [JSX and Rendering Elements](https://github.com/kaif21-cmd/JS_/tree/main/DAY2.JS)               |
+| Day 3| Javascrpit day 3              | [Components and Props](https://github.com/kaif21-cmd/JS_/tree/main/DAY3.JS)                 |
+| Day 4|  Javascrpit day 4              | [State and Lifecycle](https://github.com/kaif21-cmd/JS_/tree/main/DAY4.JS)                   |
+| Day 5|  Javascrpit day 5                  | [Handling Events](https://github.com/kaif21-cmd/JS_/tree/main/DAY5.JS)                       |
+| Day 6| Javascrpit day 6            | [Conditional Rendering](https://github.com/kaif21-cmd/JS_/tree/main/DAY6.JS)           |
+| Day 7| Javascrpit day 7                      | [Lists and Keys](https://github.com/kaif21-cmd/JS_/tree/main/DAY7.JS)                             |
+| Day 8| Javascrpit day 8                   | [Forms](https://github.com/kaif21-cmd/JS_/blob/main/Methord.js)                                             |
 | Day 9| Javascrpit day 9                  | [Lifting State Up](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
-| Day 10| Javascrpit day 10       | [Composition vs Inheritance](https://github.com/kaifshaikh262000/react-learning/blob/main/day10/composition-inheritance.md)   |
-| Day 11| Javascrpit day 11               | [Thinking in React](https://github.com/kaifshaikh262000/react-learning/blob/main/day11/thinking-in-react.md)                   |
+| Day 10| Javascrpit day 10       | [Composition vs Inheritance](https://github.com/kaif21-cmd/JS_/tree/main/DAY10.JS)   |
+| Day 11| Javascrpit day 11               | [Thinking in React](https://github.com/kaif21-cmd/JS_/blob/main/DAY11.JS/DAY11.md)                   |
 | Day 12| Javascrpit day 12                      | [React Router](https://github.com/kaifshaikh262000/react-learning/blob/main/day12/react-router.md)                             |
 | Day 13| Javascrpit day 13                   | [Code Splitting](https://github.com/kaifshaikh262000/react-learning/blob/main/day13/code-splitting.md)                         |
 | Day 14| Javascrpit day 14                           | [Context](https://github.com/kaifshaikh262000/react-learning/blob/main/day14/context.md)                                       |
