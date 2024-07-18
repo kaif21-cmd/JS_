@@ -15,7 +15,7 @@ Welcome to my JavaScript Learning Journey! This repository contains my daily pro
 | Day 4|  Javascrpit day 4              | [day4](https://github.com/kaif21-cmd/JS_/tree/main/DAY4.JS)                   |
 | Day 5|  Javascrpit day 5                  | [day5](https://github.com/kaif21-cmd/JS_/tree/main/DAY5.JS)                       |
 | Day 6| Javascrpit day 6            | [day6](https://github.com/kaif21-cmd/JS_/tree/main/DAY6.JS)           |
-| Day 7| Javascrpit day 7                      | [day37](https://github.com/kaif21-cmd/JS_/tree/main/DAY7.JS)                             |
+| Day 7| Javascrpit day 7                      | [day7](https://github.com/kaif21-cmd/JS_/tree/main/DAY7.JS)                             |
 | Day 8| Javascrpit day 8                   | [day8](https://github.com/kaif21-cmd/JS_/blob/main/Methord.js)                                             |
 | Day 9| Javascrpit day 9                  | [day9](https://github.com/kaifshaikh262000/react-learning/blob/main/day9/lifting-state-up.md)                     |
 | Day 10| Javascrpit day 10       | [day10](https://github.com/kaif21-cmd/JS_/tree/main/DAY10.JS)   |
