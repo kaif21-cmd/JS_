@@ -9,7 +9,7 @@ Welcome to my JavaScript Learning Journey! This repository contains my daily pro
 
 | Day  | Topic                              | Link                                                                                          |
 |------|------------------------------------|-----------------------------------------------------------------------------------------------|
-| Day 1| Javascrpit day 1              | [Introduction to React](https://github.com/kaifshaikh262000/react-learning/blob/main/day1/introduction.md)                     |
+| Day 1| Javascrpit day 1              | [Introduction to React](https://github.com/kaif21-cmd/JS_/tree/main/DAY1.JS)                     |
 | Day 2| Javascrpit day 2         | [JSX and Rendering Elements](https://github.com/kaifshaikh262000/react-learning/blob/main/day2/jsx-rendering.md)               |
 | Day 3| Javascrpit day 3              | [Components and Props](https://github.com/kaifshaikh262000/react-learning/blob/main/day3/components-props.md)                 |
 | Day 4|  Javascrpit day 4              | [State and Lifecycle](https://github.com/kaifshaikh262000/react-learning/blob/main/day4/state-lifecycle.md)                   |
