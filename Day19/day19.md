@@ -38,3 +38,14 @@ function getName() {
 getName();
 hoisting not occur in let and const 
 ```
+# Question 4
+```jsx
+let name = 'Lydia';
+
+function getName() {
+  console.log(name);
+}
+
+getName(); // Lydia
+in this case it point the global object 
+```
