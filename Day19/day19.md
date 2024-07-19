@@ -36,5 +36,5 @@ function getName() {
 }
 
 getName();
-hoisting not occur in let and const or also let is curly scoped variable can acces only value in thier curly scope 
+hoisting not occur in let and const 
 ```
