@@ -26,3 +26,15 @@ firstFunction();
 secondFunction();
 second, I have resolved! and I have resolved!, second
 ```
+# Question 3
+```jsx
+let name = 'Lydia';
+
+function getName() {
+  console.log(name);
+  let name = 'Sarah';
+}
+
+getName();
+hoisting not occur in let and const or also let is curly scoped variable can acces only value in thier curly scope 
+```
