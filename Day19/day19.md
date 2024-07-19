@@ -71,5 +71,5 @@ The Promise.all method runs the passed promises in parallel. If one promise fail
 ```
 kaif shaikj
 kaif sjhaikh
-kAIF SHaikj
+
 
