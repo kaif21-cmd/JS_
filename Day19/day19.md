@@ -109,3 +109,10 @@ y=2+1=3
 y=3+1=4
 retun X*y [1,2,3]*[2,3,4]=[2,6,12]
 ```
+# Question 10
+```jsx
+const resultss=[1, 2, 3].map((x) => x + 1);
+console.log(resultss)
+[ 2, 3, 4 ]
+
+```
