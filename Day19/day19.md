@@ -98,3 +98,14 @@ items.push("Kaif")
 console.log(items)
 [ 'Kaif' ]
 ```
+# Question 9
+```jsx
+const result=[1, 2, 3].map((x) => {
+    const y = x + 1; 
+    return x * y;
+  });
+ y=1+1=2
+y=2+1=3
+y=3+1=4
+retun X*y [1,2,3]*[2,3,4]=[2,6,12]
+```
