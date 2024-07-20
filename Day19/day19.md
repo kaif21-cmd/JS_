@@ -90,6 +90,11 @@ console.log(a) //give referce error becouse of let and const are function scope
  console.log(b)//reference error
  console.log(c)//print  1 functional scope 
 ```
-
-
-
+# Question 8
+```jsx
+new way to create array without sing new kwyword
+const items = [];
+items.push("Kaif")
+console.log(items)
+[ 'Kaif' ]
+```
