@@ -116,5 +116,5 @@ console.log(resultss)
 [ 2, 3, 4 ]
 
 ```
-# kaifshaikh262000@gmail.com
+
 
