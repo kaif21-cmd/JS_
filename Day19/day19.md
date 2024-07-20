@@ -78,7 +78,18 @@ console.log(foo,bar)
 console.log(foo[0],bar[0])
  1 1
 ```
+# Question 7
 
+```jsx
+{
+    let a=1;
+    const b=1
+    var c=1;
+}
+console.log(a) //give referce error becouse of let and const are function scope 
+ console.log(b)//reference error
+ console.log(c)//print  1 functional scope 
+```
 
 
 
