@@ -69,6 +69,15 @@ The Promise.all method runs the passed promises in parallel. If one promise fail
 
 
 ```
+# Qyestion 6
+```jsx
+const foo=[1,2]
+const bar=foo
+console.log(foo,bar)
+[ 1, 2 ] [ 1, 2 ]
+console.log(foo[0],bar[0])
+ 1 1
+```
 
 
 
