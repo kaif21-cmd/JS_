@@ -13,3 +13,18 @@ console.log(Person.name)
 
 
 ```
+# question 2 Checxk number is integer or not ?
+```jsx
+ function isInteger(num){
+    return num%1===0; //by formula 
+ }
+ console.log(isInteger(2));
+ console.log(isInteger(2.5));
+
+# 2ND WAY
+function isInteger(num){
+    return Number.isInteger(num)
+ }
+ console.log(isInteger(3));
+
+```
