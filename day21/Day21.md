@@ -1,5 +1,5 @@
 # DAY 21 
-# question 1 
+# Question 1 
 ```jsx
 function show(){
     this.name="kaif";
@@ -13,7 +13,7 @@ console.log(Person.name)
 
 
 ```
-# question 2 Checxk number is integer or not ?
+# Question 2 Checxk number is integer or not ?
 ```jsx
  function isInteger(num){
     return num%1===0; //by formula 
