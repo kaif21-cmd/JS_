@@ -158,7 +158,7 @@ This prints the length of array3, which is 1
 output: [] [] [Array[5]] 1
 ```
 # lets understand new Array methord
-## In JavaScript, the Array constructor can be used to create new arrays in different ways depending on the arguments provided. Here’s a detailed look at how the Array constructor works:
+#### In JavaScript, the Array constructor can be used to create new arrays in different ways depending on the arguments provided. Here’s a detailed look at how the Array constructor works:
 ```jsx
 var arr = new Array();
 create empty array
