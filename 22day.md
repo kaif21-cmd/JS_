@@ -98,3 +98,18 @@ hoisting applies to function declarations in their entirety, including their bod
 output: true true
 with the help of o string methord  we can campare two objects 
 ```
+# Question  7 
+```jsx
+(function() {
+	var objA = Object.create({
+		foo: 'foo'
+	});
+	var objB = objA;
+	console.log(objA == objB);
+	console.log(objA === objB);
+	console.log(objA.toString() == objB.toString());
+	console.log(objA.toString() === objB.toString());
+}());
+output All true due to var onjb=obja refernce pass pointing to same memory
+and tostring methord convert to string with the help of this we can campre the objects 
+```
