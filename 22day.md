@@ -127,3 +127,33 @@ and tostring methord convert to string with the help of this we can campre the o
 due to refernce pass if we change in obja then there is change occur in objb also
 output bar bar
 ```
+ # Question 9 
+ ```jsx
+(function() {
+	var array1 = [];
+	var array2 = new Array(100);
+	var array3 = new Array(['1',2,'3',4,5.6]);
+	console.log(array1);
+	console.log(array2);
+	console.log(array3);
+	console.log(array3.length);
+}());
+array1:
+var array1 = []; creates an empty array.
+Output: []
+This prints an empty array.
+array2:
+var array2 = new Array(100); creates an array with a length of 100, but no elements are initialized. It has 100 slots, but they are all empty (i.e., undefined).
+Output: Array(100), which will appear as [ <100 empty items> ] in most JavaScript environments.
+This prints an array with 100 empty slots
+array3:
+var array3 = new Array(['1',2,'3',4,5.6]); creates a single-element array where the sole element is itself an array (['1',2,'3',4,5.6]).
+The constructor new Array() when given a single argument, creates an array with that single argument as its first element.
+Output: [['1',2,'3',4,5.6]]
+This prints an array containing one element, which is another array
+array3.length:
+array3.length returns the number of elements in array3. Since array3 contains one element (the nested array), the length is 1.
+Output: 1
+This prints the length of array3, which is 1
+output: [] [] [Array[5]] 1
+```
