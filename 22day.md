@@ -44,3 +44,14 @@ var employeeId = '1234abe';
 }());
 output: undefined due to hoisting
 ```
+ # Question 3 
+ ```jsx
+(function() {
+	console.log(typeof displayFunc);
+	var displayFunc = function(){
+		console.log("Hi I am inside displayFunc");
+	}
+}());
+output is undefined due to hoisting 
+```
+
