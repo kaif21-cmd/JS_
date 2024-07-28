@@ -11,5 +11,6 @@ console.log(Object.keys(counterArray)) with the helo of thus we get all the keys
 [ 'a', 'b', 'c' ]
 we get the lenght by using this
 console.log(Object.keys(counterArray).length)
+//3
 
 ```
