@@ -85,3 +85,16 @@ foo();
 //output function function 
 hoisting applies to function declarations in their entirety, including their body, which is why both bar and abc are accessible throughout the foo function. Function expressions, on the other hand, are only partially hoisted, and their initialization occurs where the expression is written. Thus, you can't call a function expression before its definition, as it will be undefined at that point.
 ```
+# Question 6
+```jsx
+(function() {
+	var objA = Object.create({
+		foo: 'foo'
+	});
+	var objB = Object.create(objA);
+	console.log(objA.toString() == objB.toString());
+	console.log(objA.toString() === objB.toString());
+}());
+output: true true
+with the help of o string methord  we can campare two objects 
+```
