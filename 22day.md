@@ -54,4 +54,18 @@ output: undefined due to hoisting
 }());
 output is undefined due to hoisting 
 ```
+# Question 4
+```jsx
+var employeeId = 'abc123';
+
+function foo() {
+	employeeId();
+	return;
+
+	function employeeId() {
+		console.log(typeof employeeId);
+	}
+}
+foo();
+```
 
