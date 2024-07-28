@@ -14,3 +14,21 @@ console.log(Object.keys(counterArray).length)
 //3
 
 ```
+# 2nd methord
+```jsx
+var counterArray={
+    a:3,
+    b:4,
+}
+counterArray["c"]=1;
+function getlenght(object){
+    var count=0;
+    for(key in object){
+        if(object.hasOwnProperty(key))
+        count++;
+    }
+    return count 
+}
+const length=getlenght(counterArray)
+console.log(length)
+```
