@@ -172,3 +172,14 @@ var nestedArray = new Array([1, 2, 3]);
 console.log(nestedArray); // [[1, 2, 3]]
 
 ```
+# Question 10
+#### indexof methord give the firstoccurence of element in the array and array.indexOf(searchElement, fromIndex)
+```jsx
+(function(){
+    var array = [1,2,3,4,5,1,2,3,4,5,6];
+    console.log(array.indexOf(2)); 
+    console.log(array.indexOf(2,3)); //search element 2 from index 3 
+    console.log(array.indexOf(2,10)); //search element 2 from index 10 if not found return -1 
+})();
+output: 1 6 -1
+```
