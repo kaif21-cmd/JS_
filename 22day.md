@@ -163,3 +163,12 @@ output: [] [] [Array[5]] 1
 var arr = new Array();
 create empty array
 ```
+```jsx
+var arr = new Array(length);
+var arr = new Array(3); // Creates an array with 3 empty slots
+var arr = new Array(1, 2, 3); // Creates an array with elements [1, 2, 3]
+var arr = new Array([1, 2, 3]); // Creates an array with one element, which is the array [1, 2, 3]
+var nestedArray = new Array([1, 2, 3]);
+console.log(nestedArray); // [[1, 2, 3]]
+
+```
