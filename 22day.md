@@ -32,3 +32,15 @@ function getlenght(object){
 const length=getlenght(counterArray)
 console.log(length)
 ```
+# Question 2
+```jsx
+var employeeId = '1234abe';
+(function() {
+	console.log(employeeId);
+	var employeeId = '122345';
+	(function() {
+		var employeeId = 'abc1234';
+	}());
+}());
+output: undefined due to hoisting
+```
