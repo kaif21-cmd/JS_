@@ -113,3 +113,17 @@ with the help of o string methord  we can campare two objects
 output All true due to var onjb=obja refernce pass pointing to same memory
 and tostring methord convert to string with the help of this we can campre the objects 
 ```
+# Question 8
+```jsx
+(function() {
+	var objA = Object.create({
+		foo: 'foo'
+	});
+	var objB = objA;
+	objB.foo = 'bar';
+	console.log(objA.foo);
+	console.log(objB.foo);
+}());
+due to refernce pass if we change in obja then there is change occur in objb also
+output bar bar
+```
