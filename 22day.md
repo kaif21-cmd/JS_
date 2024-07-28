@@ -68,4 +68,20 @@ function foo() {
 }
 foo();
 ```
+# Question 5 
+```jsx
+(function foo() {
+	bar();
 
+	function bar() {
+		abc();
+		console.log(typeof abc);
+	}
+
+	function abc() {
+		console.log(typeof bar);
+	}
+}());
+//output function function 
+hoisting applies to function declarations in their entirety, including their body, which is why both bar and abc are accessible throughout the foo function. Function expressions, on the other hand, are only partially hoisted, and their initialization occurs where the expression is written. Thus, you can't call a function expression before its definition, as it will be undefined at that point.
+```
