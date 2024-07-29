@@ -123,3 +123,17 @@ list.splice(1, 2) attempts to remove elements starting from index 1, but since t
 The final state of the list is ['foo'].
 
 ```
+# Question 6 
+```jsx
+var obj = {
+  message: 'Hello',
+  innerMessage: function () {
+    (function () {
+      console.log(this.message);
+    }());
+  }
+};
+console.log(obj.innerMessage());
+//This refers to global context
+in iffe function here
+```
