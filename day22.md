@@ -77,6 +77,7 @@ After filtering, the array remains: [2, '12', true].
 Output: [2, '12', true]
 ```
 # Question 4
+#### spice is used to make a shallow copy of array from given index (1) or (1,3) means from 1 to 2 not 3 
 ```jsx
 (function(){
 	var list = ['foo','bar','john','ritz'];
@@ -107,4 +108,8 @@ slice(2, 2) specifies the start and end indices as 2, which means it starts at i
 This results in an empty array because there are no elements between index 2 and 2.
 Output: []
 
+```
+# Question 5
+#### The splice method is being used to remove elements from the list array
+```jsx
 ```
