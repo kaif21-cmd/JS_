@@ -76,3 +76,35 @@ The array [2, '12', true] contains no null or undefined values.
 After filtering, the array remains: [2, '12', true].
 Output: [2, '12', true]
 ```
+# Question 4
+```jsx
+(function(){
+	var list = ['foo','bar','john','ritz'];
+	    console.log(list.slice(1));	
+	    console.log(list.slice(1,3));
+	    console.log(list.slice());
+	    console.log(list.slice(2,2));
+	    console.log(list);				
+})();
+```
+### Explanation of 4
+```jsx
+var list = ['foo', 'bar', 'john', 'ritz'];
+console.log(list.slice(1));
+slice(1) creates a shallow copy of the array starting from index 1 to the end.
+The elements starting from index 1 are: ['bar', 'john', 'ritz'].
+Output: ['bar', 'john', 'ritz']
+console.log(list.slice(1, 3));
+slice(1, 3) creates a shallow copy of the array starting from index 1 up to, but not including, index 3.
+The elements from index 1 to 2 (index 3 not included) are: ['bar', 'john'].
+Output: ['bar', 'john']
+console.log(list.slice());
+slice() with no arguments creates a shallow copy of the entire array.
+The result is a copy of the original array: ['foo', 'bar', 'john', 'ritz'].
+Output: ['foo', 'bar', 'john', 'ritz']
+console.log(list.slice(2, 2));
+slice(2, 2) specifies the start and end indices as 2, which means it starts at index 2 and ends before index 2.
+This results in an empty array because there are no elements between index 2 and 2.
+Output: []
+
+```
