@@ -137,3 +137,14 @@ console.log(obj.innerMessage());
 //This refers to global context
 in iffe function here
 ```
+# Question 7
+```jsx
+function myFunc(){
+	console.log(this.message);
+}
+myFunc.message = "Hi John";
+	
+console.log(myFunc());
+//undefined
+
+```
