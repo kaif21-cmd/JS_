@@ -171,4 +171,5 @@ Third Call: console.log(myFunc("a", "b", "c", "d"));
 
 When myFunc is called with more arguments than declared parameters, only the declared parameters are considered.
 myFunc.length is still 2, regardless of the number of arguments passed.
+ final output is 2 2 2
 ```
