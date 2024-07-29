@@ -77,7 +77,7 @@ After filtering, the array remains: [2, '12', true].
 Output: [2, '12', true]
 ```
 # Question 4
-#### spice is used to make a shallow copy of array from given index (1) or (1,3) means from 1 to 2 not 3 
+#### slice is used to make a shallow copy of array from given index (1) or (1,3) means from 1 to 2 not 3 
 ```jsx
 (function(){
 	var list = ['foo','bar','john','ritz'];
@@ -112,4 +112,14 @@ Output: []
 # Question 5
 #### The splice method is being used to remove elements from the list array
 ```jsx
+(function(){
+	var list = ['foo','bar','john'];
+	    console.log(list.splice(1));		
+	    console.log(list.splice(1,2));
+	    console.log(list);			
+})();
+//list.splice(1) removes elements starting from index 1 to the end, resulting in ['bar', 'john'] being removed and leaving ['foo'].
+list.splice(1, 2) attempts to remove elements starting from index 1, but since there are no elements at index 1 in the current list (['foo']), nothing is removed.
+The final state of the list is ['foo'].
+
 ```
