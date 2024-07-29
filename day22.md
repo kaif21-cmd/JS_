@@ -186,3 +186,20 @@ The arguments.length property reflects the number of actual arguments passed to 
 It is different from the length property of the function object (myFunc.length), which only reflects the number of declared parameters in the function.
 //output : 0,2,4
 ```
+# Question 10
+```jsx
+var employeeId = 'aq123';
+function Employee() {
+  this.employeeId = 'bq1uy';
+}
+console.log(Employee.employeeId);
+
+```
+### Explanation
+```jsx
+Global employeeId: The global variable employeeId ('aq123') is not related to Employee.
+
+Instance Property: In Employee, this.employeeId = 'bq1uy' sets employeeId for instances created with Employee, but this property is not on the Employee function itself.
+
+Function Property: Employee.employeeId refers to a property directly on the Employee function object. Since this property hasn't been defined, it is undefined.
+```
