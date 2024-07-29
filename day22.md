@@ -173,3 +173,16 @@ When myFunc is called with more arguments than declared parameters, only the dec
 myFunc.length is still 2, regardless of the number of arguments passed.
  final output is 2 2 2
 ```
+# Question 9
+```jsx
+function myFunc() {
+  console.log(arguments.length);
+}
+console.log(myFunc());
+console.log(myFunc("a","b"));
+console.log(myFunc("a","b","c","d"));
+// output:
+The arguments.length property reflects the number of actual arguments passed to the function during the call.
+It is different from the length property of the function object (myFunc.length), which only reflects the number of declared parameters in the function.
+//output : 0,2,4
+```
