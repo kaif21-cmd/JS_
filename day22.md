@@ -148,3 +148,27 @@ console.log(myFunc());
 //undefined
 
 ```
+# Question 8
+```jsx
+function myFunc(param1,param2) {
+  console.log(myFunc.length);
+}
+console.log(myFunc());
+console.log(myFunc("a","b"));
+console.log(myFunc("a","b","c","d"));
+//First Call: console.log(myFunc());
+
+When myFunc is called without arguments, it still has two declared parameters.
+myFunc.length will be 2.
+
+//Second Call: console.log(myFunc("a", "b"));
+
+When myFunc is called with arguments "a" and "b", it still has two declared parameters.
+myFunc.length remains 2.
+
+//3
+Third Call: console.log(myFunc("a", "b", "c", "d"));
+
+When myFunc is called with more arguments than declared parameters, only the declared parameters are considered.
+myFunc.length is still 2, regardless of the number of arguments passed.
+```
