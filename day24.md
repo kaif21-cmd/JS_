@@ -51,4 +51,17 @@ console.log(Math.floor(-4.7)); // Output: -5
 console.log(Math.floor(-4.3)); // Output: -5
 
 ```
+# Question 5 
+### Reverse of a Number 
+```jsx
+let num = 20111001;
+let reverse = 0;
 
+while (num != 0) {
+    reverse = reverse * 10 + (num % 10);  // Add the last digit of num to reverse
+    num = Math.floor(num / 10);           // Remove the last digit from num
+}
+
+console.log(reverse); // Output the reversed number
+
+```
