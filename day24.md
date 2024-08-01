@@ -73,6 +73,8 @@ const b=str.replaceAll("f","a")
 console.log(b)
 output : kaiaaaaa
 ```
+# Question 7
+#### Write a function which can convert the time input given in 12 hours format to 24 hours format
 ```jsx
 function convertTo24HrsFormat(timeText) {
   var timeTextLower = timeText.toLowerCase();
