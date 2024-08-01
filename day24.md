@@ -24,5 +24,15 @@ function isint(n){
 }
 console.log(isint(2.5))
 ```
+# Question 3 
+```jsx 
+const str = "kaif shaikh";
+let reversedString = "";
+for (let i = 0; i < str.length; i++) {
+  reversedString = str.charAt(i) + reversedString;
+}
+ 
+ console.log(reversedString);
+```
 
 
