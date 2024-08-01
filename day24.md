@@ -14,7 +14,7 @@ console.log(ex,num1,num2)
     return value%1===0;
 }
 console.log(a(1.5))
-```
+```  
 ### Built in methord for finding the integer
 ```jsx
 
