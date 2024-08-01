@@ -199,5 +199,12 @@ const str = "I love JavaScript";
 const b=str.replace(/[aeiou]/gi, ""); // _lv_JvScrpt
  console.log(b)
 ```
+#### Explanation 
+```jsx
+[aeiou] matches any vowel.
+The g flag ensures that all vowels in the string are matched and replaced, not just the first one.
+The i flag ensures that both lowercase and uppercase vowels are matched and replaced.
+So, using gi together allows for a comprehensive and case-insensitive search-and-replace operation across the entire string.
+```
 
 
