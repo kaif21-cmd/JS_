@@ -35,7 +35,7 @@ for (let i = 0; i < str.length; i++) {
  
  console.log(reversedString);
 ```
-### Buikt in methord
+### Built in methord
 ```jsx
 const str = "JavaScript is awesome";
 const b=str.split(" ").reverse().join(" "); // "awesome is JavaScript"
