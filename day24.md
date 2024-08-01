@@ -206,5 +206,22 @@ The g flag ensures that all vowels in the string are matched and replaced, not j
 The i flag ensures that both lowercase and uppercase vowels are matched and replaced.
 So, using gi together allows for a comprehensive and case-insensitive search-and-replace operation across the entire string.
 ```
+# question 11
+#### Write a function which accepts two valid dates and returns the difference between them as number of days
+```jsx
+const DAY_IN_MILLISECONDS = 1000 * 60 * 60 * 24;
 
+function getDaysBetweenDates(dateText1, dateText2) {
+  const date1 = new Date(dateText1);
+  const date2 = new Date(dateText2);
+  const diffTime = Math.abs(date2 - date1);
+  const diffDays = Math.ceil(diffTime / DAY_IN_MILLISECONDS);
+  return diffDays;
+}
+
+// Example usage
+const daysBetween = getDaysBetweenDates("10/15/2020", "12/1/2020");
+console.log(daysBetween); // Output: 47
+
+```
 
