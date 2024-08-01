@@ -105,3 +105,12 @@ console.log(convertTo24HrsFormat("03:15PM")); // "15:15"
 console.log(convertTo24HrsFormat("03:15AM")); // "03:15"
 
 ```
+# Question 8 
+#### Write a code to truncate a string to a certain number of words
+```jsx
+const str = "JavaScript is simple but not easy to master";
+const wordLimit = 3;
+const b=str.split(" ").slice(0,wordLimit).join(" ")
+console.log(b)
+output : JavaScript is simple
+```
