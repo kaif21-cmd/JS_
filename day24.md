@@ -168,4 +168,16 @@ The string must start with a digit between 6 and 9.
 The string must be exactly 10 digits long.
 The string must contain only digits, with no additional characters or spaces.
 ```
+### Question Particular string is a Phone Number or not 
+```jsx
+const indianMobileNumberRegex = /^[6-9]\d{9}$/;
+
+// Examples:
+console.log(indianMobileNumberRegex.test("9876543210")); // true
+console.log(indianMobileNumberRegex.test("5876543210")); // false
+console.log(indianMobileNumberRegex.test("987654321"));  // false
+console.log(indianMobileNumberRegex.test("09876543210")); // false
+
+```
+
 
