@@ -73,3 +73,33 @@ const b=str.replaceAll("f","a")
 console.log(b)
 output : kaiaaaaa
 ```
+```jsx
+function convertTo24HrsFormat(timeText) {
+  var timeTextLower = timeText.toLowerCase();
+  let [hours, mins] = timeTextLower.split(":");
+
+  // 12 o'clock is the special case to be handled both for AM and PM
+  if (timeTextLower.endsWith("am")) {
+    hours = hours == 12 ? "0" : hours;
+  } else if (timeTextLower.endsWith("pm")) {
+    hours = hours == 12 ? hours : String(+hours + 12);
+  }
+
+  // Remove the 'am' or 'pm' from the minutes part and pad minutes to 2 digits
+  mins = mins.slice(0, -2).padStart(2, '0');
+
+  // Pad hours to 2 digits
+  hours = hours.padStart(2, '0');
+
+  return hours + ":" + mins;
+}
+
+// Examples:
+console.log(convertTo24HrsFormat("12:30PM")); // "12:30"
+console.log(convertTo24HrsFormat("12:30AM")); // "00:30"
+console.log(convertTo24HrsFormat("07:45PM")); // "19:45"
+console.log(convertTo24HrsFormat("07:45AM")); // "07:45"
+console.log(convertTo24HrsFormat("03:15PM")); // "15:15"
+console.log(convertTo24HrsFormat("03:15AM")); // "03:15"
+
+```
