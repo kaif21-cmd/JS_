@@ -25,6 +25,7 @@ function isint(n){
 console.log(isint(2.5))
 ```
 # Question 3 
+# Reverse a string 
 ```jsx 
 const str = "kaif shaikh";
 let reversedString = "";
