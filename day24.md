@@ -192,7 +192,7 @@ console.log(numInStr(['abc', 'ab10c', 'a10bc', 'bcd'])); // ['ab10c', 'a10bc']
 console.log(numInStr(['this is a test', 'test1']));      // ['test1']
 
 ```
-# question 10
+# Question 10
 #### Removing All Voweel from the strings
 ```jsx
 const str = "I love JavaScript";
