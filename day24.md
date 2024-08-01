@@ -114,3 +114,58 @@ const b=str.split(" ").slice(0,wordLimit).join(" ")
 console.log(b)
 output : JavaScript is simple
 ```
+# Question 9 
+#### Validating Regular Expression in  js 
+```jsx
+
+Regular Expression: ^[6-9]\d{9}$
+^ (Caret)
+
+This asserts the position at the start of the string. It ensures that the match starts right from the beginning of the input string.
+[6-9]
+
+This is a character class that matches any one of the characters inside the square brackets. In this case, it matches any single digit between 6 and 9 (inclusive).
+This ensures that the first digit of the mobile number is either 6, 7, 8, or 9, which are the valid starting digits for Indian mobile numbers.
+\d
+
+This matches any digit (0-9). The \d is shorthand for the character class [0-9].
+\d{9}
+
+The {9} is a quantifier that specifies exactly 9 occurrences of the preceding element, which is \d (a digit).
+This ensures that exactly 9 more digits follow the initial digit (which makes up the total of 10 digits).
+$ (Dollar Sign)
+
+This asserts the position at the end of the string. It ensures that the match ends right at the end of the input string.
+Putting It All Together
+^[6-9]: Ensures the string starts with a digit between 6 and 9.
+\d{9}$: Ensures that exactly 9 digits follow and the string ends there.
+Examples
+Valid Mobile Number: "9876543210"
+
+Starts with 9 (which is within the range 6-9).
+Followed by exactly 9 digits: 876543210.
+Total length is 10 digits.
+Matches the regular expression: ^[6-9]\d{9}$.
+Invalid Mobile Number: "5876543210"
+
+Starts with 5 (which is not within the range 6-9).
+Does not match the regular expression.
+Invalid Mobile Number: "987654321"
+
+Starts with 9 (which is within the range 6-9).
+Followed by only 8 digits (87654321).
+Total length is 9 digits, not 10.
+Does not match the regular expression.
+Invalid Mobile Number: "09876543210"
+
+Starts with 0 (which is not within the range 6-9).
+Total length is 11 digits.
+Does not match the regular expression.
+Conclusion
+The regular expression ^[6-9]\d{9}$ effectively ensures that the input string is a valid Indian mobile number by enforcing the following rules:
+
+The string must start with a digit between 6 and 9.
+The string must be exactly 10 digits long.
+The string must contain only digits, with no additional characters or spaces.
+```
+
