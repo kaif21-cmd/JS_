@@ -7,13 +7,19 @@ let num2=20;
 const  ex=[num1,num2]=[num2,num1]
 console.log(ex,num1,num2)
 ```
-# question 2 
-# Number is imnteger or not 
+# Question 2 
+# Number is integer or not 
 ```jsx
  var a=function isint(value){
     return value%1===0;
 }
 console.log(a(1.5))
 ```
+### Built in methord for finding the integer
+
+function isint(n){
+    return Number.isInteger(n)
+}
+console.log(isint(2.5))
 
 
