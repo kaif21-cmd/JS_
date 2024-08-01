@@ -1,7 +1,6 @@
 # Day 24 
+# Question
 # Swaping of two numbers 
-
-# Question 
 ```jsx
 let num1=10;
 let num2=20;
