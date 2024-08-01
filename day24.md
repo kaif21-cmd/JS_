@@ -41,5 +41,14 @@ const str = "JavaScript is awesome";
 const b=str.split(" ").reverse().join(" "); // "awesome is JavaScript"
  console.log(b)
 ```
+# Question 4 
+### use of Math.floor()
+#### The Math.floor() function in JavaScript returns the largest integer less than or equal to a given number.
+```jsx
+console.log(Math.floor(4.7));  // Output: 4
+console.log(Math.floor(4.3));  // Output: 4
+console.log(Math.floor(-4.7)); // Output: -5
+console.log(Math.floor(-4.3)); // Output: -5
 
+```
 
