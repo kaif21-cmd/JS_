@@ -16,10 +16,13 @@ console.log(ex,num1,num2)
 console.log(a(1.5))
 ```
 ### Built in methord for finding the integer
+```jsx
+
 
 function isint(n){
     return Number.isInteger(n)
 }
 console.log(isint(2.5))
+```
 
 
