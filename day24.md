@@ -65,3 +65,11 @@ while (num != 0) {
 console.log(reverse); // Output the reversed number
 
 ```
+# Question 6 
+#### Replace a word with other word
+```jsx
+const str="kaifffff"
+const b=str.replaceAll("f","a")
+console.log(b)
+output : kaiaaaaa
+```
