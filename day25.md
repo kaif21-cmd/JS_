@@ -18,3 +18,15 @@ person.name="kaif"
 person.age="21"
 console.log(person)
 ```
+# 3  using Class constructor
+```jsx
+class person{
+    constructor(name,age){
+        this.name=name;
+        this.age=age
+    }
+}
+const kaif=new person("kaif","21")
+const shahan=new person("shahan","24")
+console.log(kaif,shahan)
+```
