@@ -19,6 +19,7 @@ person.age="21"
 console.log(person)
 ```
 # 3  using Class constructor
+#### with the help of thus we can make object of same type by using new keyword
 ```jsx
 class person{
     constructor(name,age){
