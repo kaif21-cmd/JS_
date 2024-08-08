@@ -105,3 +105,11 @@ console.log(test())
 console.log(num)
 ```
 #### Output: 1,0
+
+# Question 9 
+```jsx
+const add=(a=1,b=2)=>a+b
+console.log(add())
+console.log(add(5))
+console.log(add(undefined,10))
+```
