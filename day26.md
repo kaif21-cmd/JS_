@@ -128,3 +128,16 @@ typeof undefined returns undefined.
 null === undefined is false because null and undefined are two distinct types in JavaScript.
 
 null == undefined is true because == is the loose equality operator in JavaScript, which performs type coercion before comparison. In this case, both null and undefined are coerced to undefined before comparison, and since they both have the same value, the comparison returns true. However, it is generally recommended to use === instead of == to avoid unexpected behavior due to type coercion
+
+# Question 11
+### Calculating all postive number in the array 
+```jsx
+let sum=0
+const ar=[1,-2,3,4,5]
+ar.map((n)=>{
+    if (n>-1){
+        sum=sum+n
+    }
+})
+console.log(sum)
+```
