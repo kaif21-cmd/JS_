@@ -155,3 +155,18 @@ function sumofpostive(n){
 const arr=[1,2,3,4,-1]
 console.log(sumofpostive(arr))
 ```
+# Question 12
+```jsx
+function  removevowels(str){
+    const vowels=["a", "e", "i", "o", "u", "A", "E"]
+    let newstr=" "
+    for(let i=0;i<str.length;i++){
+        if(!vowels.includes(str[i])){
+            newstr=newstr+str[i]
+        }
+    }
+    return newstr
+}
+const str = "This is a test string with vowels";
+console.log(removevowels(str));
+```
