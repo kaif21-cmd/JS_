@@ -156,6 +156,7 @@ const arr=[1,2,3,4,-1]
 console.log(sumofpostive(arr))
 ```
 # Question 12
+#### Write a function in JavaScript that takes a string as input and returns a new string with all the vowels removed.
 ```jsx
 function  removevowels(str){
     const vowels=["a", "e", "i", "o", "u", "A", "E"]
