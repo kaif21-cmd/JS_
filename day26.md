@@ -94,3 +94,14 @@ The code is using the forEach method to iterate over an array of objects, and it
 It's updating the original objects with x*2 values.
 
 So, the output of the code is 2 4 6 8 10.
+# Question 8 
+```jsx
+let num=0
+function test(){
+    var num=1;
+    return num;
+}
+console.log(test())
+console.log(num)
+```
+#### Output: 1,0
