@@ -45,3 +45,17 @@ if (function f(){}){
 console.log(x);
 output: 1 undefined 
 ```
+# Question 5 
+### Guess the output 
+```jsx
+let a={
+    x:1,
+    y:2,
+}
+let b=a
+a.x=5;
+console.log(a)
+console.log(b)
+```
+#### Output: { x: 5, y: 2 }
+{ x: 5, y: 2 }  due to reference value arr,objects are belongs to refernce type
