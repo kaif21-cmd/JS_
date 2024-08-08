@@ -1,5 +1,5 @@
 # Day 26 
-# Question1 Output of the code 
+# Question 1 Output of the code 
 ```jsx
 const x={
     foo:1
@@ -14,3 +14,14 @@ console.log(addfoo(y))
 console.log(addfoo(x))
 output: 3,2
 ```
+# Question 2 output 
+```jsx
+const arr = [1, 2, 3, 4, 5];
+
+for (var i = 0; i < arr.length; i++) {
+  setTimeout(function () {
+    console.log(i);
+  }, 1000);
+}
+```
+#### The setTimeout function is called inside of a loop that iterates through the elements in the arr array. The setTimeout function will execute its callback function after a delay of 1000 milliseconds. However, by the time the delay has elapsed and the callback function is called, the loop will have already completed and the value of i will be 5. As a result, the output will be 5 printed five times.
