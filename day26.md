@@ -35,3 +35,13 @@ ar.forEach(function(elem){
     console.log(elem)
 })
 ```
+# Question 4
+### Guess the Output 
+```jsx
+let x=1;
+if (function f(){}){
+    x+= typeof f; // x= x + typeof f 
+}
+console.log(x);
+output: 1 undefined 
+```
