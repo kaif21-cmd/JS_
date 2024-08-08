@@ -68,4 +68,9 @@ console.log(x===y) //due to  pointing reference different memory
 console.log(z==y)//true because of same memory referece when u pass z=y reference value passed 
 console.log(z==x)
 ```
+#### Output : 
+false
+false
+true
+false
 
