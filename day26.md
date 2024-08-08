@@ -141,7 +141,7 @@ ar.map((n)=>{
 })
 console.log(sum)
 ```
-# 2nd Way
+
 ```jsx
 function sumofpostive(n){
     let sum=0;
