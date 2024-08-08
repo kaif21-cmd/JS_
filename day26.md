@@ -179,3 +179,15 @@ function sorting(){
 const arr=[2,7,1,3]
 console.log(sorting(arr))
 ```
+# Question 14
+#### Second largest Number in the array
+```jsx
+function findSecondHighest(arr) {
+    const sortedArr = arr.sort((a, b) => b - a);
+    return sortedArr[1]
+  }
+  
+  // Example usage:
+  const numbers = [10, 5, 20, 15, 8];
+  console.log(findSecondHighest(numbers)); // Output: 15
+```
