@@ -12,5 +12,5 @@ function addfoo(obj){
 }
 console.log(addfoo(y))
 console.log(addfoo(x))
-###3,2
+output: 3,2
 ```
