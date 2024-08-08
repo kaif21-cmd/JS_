@@ -86,7 +86,8 @@ arr.forEach((obj) => (obj.x = obj.x * 2));
 
 console.log(a.x, b.x, c.x, d.x, e.x);
 ```
-#### 2 4 6 8 10
+#### output: 
+2 4 6 8 10
 
 The code is using the forEach method to iterate over an array of objects, and it is modifying the x property of each object by multiplying it by 2.
 
