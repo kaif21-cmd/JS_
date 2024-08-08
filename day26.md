@@ -199,3 +199,12 @@ const duplicate= [...new Set(kaif)]
 console.log(duplicate)
 [ 1, 2, 3, 4, 45, 5 ]
 ```
+```jsx
+function removeDuplicates(arr) {
+  return [...new Set(arr)];
+}
+
+// Example usage:
+const numbers = [1, 2, 3, 2, 1, 4, 5, 4];
+console.log(removeDuplicates(numbers)); // Output: [1, 2, 3, 4, 5]s
+```
