@@ -58,3 +58,14 @@ console.log(a)
 console.log(b)
 ```
 #### Output: { x: 5, y: 2 } ,{ x: 5, y: 2 }  due to reference value arr,objects are belongs to refernce type
+# Question 6 
+```jsx
+let x=[1,2,3]
+let y=[1,2,3]
+let z=y
+console.log(x==y) //due to  pointing reference different memory 
+console.log(x===y) //due to  pointing reference different memory 
+console.log(z==y)//true because of same memory referece when u pass z=y reference value passed 
+console.log(z==x)
+```
+
