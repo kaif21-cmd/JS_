@@ -114,3 +114,10 @@ console.log(add(5))
 console.log(add(undefined,10))
 output: 3,7,11
 ```
+# Question 10
+```jsx
+console.log(typeof null);
+console.log(typeof undefined);
+console.log(null === undefined);
+console.log(null == undefined);
+```
