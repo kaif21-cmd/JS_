@@ -171,6 +171,7 @@ function  removevowels(str){
 const str = "This is a test string with vowels";
 console.log(removevowels(str));
 ```
+# Question 13 Sort the array 
 ```jsx
 function sorting(){
     return arr.sort()
