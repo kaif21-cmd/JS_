@@ -141,3 +141,17 @@ ar.map((n)=>{
 })
 console.log(sum)
 ```
+# 2nd Way
+```jsx
+function sumofpostive(n){
+    let sum=0;
+    for(let i=0;i<n.length;i++){
+        if(n[i]>0){
+            sum=sum+n[i]
+        }
+    }
+    return sum;
+}
+const arr=[1,2,3,4,-1]
+console.log(sumofpostive(arr))
+```
