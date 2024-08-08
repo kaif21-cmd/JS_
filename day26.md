@@ -112,4 +112,5 @@ const add=(a=1,b=2)=>a+b
 console.log(add())
 console.log(add(5))
 console.log(add(undefined,10))
+output: 3,7,11
 ```
