@@ -57,5 +57,4 @@ a.x=5;
 console.log(a)
 console.log(b)
 ```
-#### Output: { x: 5, y: 2 }
-{ x: 5, y: 2 }  due to reference value arr,objects are belongs to refernce type
+#### Output: { x: 5, y: 2 } ,{ x: 5, y: 2 }  due to reference value arr,objects are belongs to refernce type
