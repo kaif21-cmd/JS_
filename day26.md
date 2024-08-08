@@ -121,3 +121,10 @@ console.log(typeof undefined);
 console.log(null === undefined);
 console.log(null == undefined);
 ```
+#### typeof null returns object which is an error in JavaScript. This is a historical bug in the language that cannot be fixed without breaking existing code. So, to check for null, you should use === null instead of typeof operator.
+
+typeof undefined returns undefined.
+
+null === undefined is false because null and undefined are two distinct types in JavaScript.
+
+null == undefined is true because == is the loose equality operator in JavaScript, which performs type coercion before comparison. In this case, both null and undefined are coerced to undefined before comparison, and since they both have the same value, the comparison returns true. However, it is generally recommended to use === instead of == to avoid unexpected behavior due to type coercion
