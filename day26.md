@@ -191,3 +191,11 @@ function findSecondHighest(arr) {
   const numbers = [10, 5, 20, 15, 8];
   console.log(findSecondHighest(numbers)); // Output: 15
 ```
+# Question 15
+#### Removing the duplicate 
+```jsx
+const kaif=[1,2,3,4,45,5,4,4,4,5,5,5]
+const duplicate= [...new Set(kaif)]
+console.log(duplicate)
+[ 1, 2, 3, 4, 45, 5 ]
+```
