@@ -196,4 +196,4 @@ function outer() {
 
 outer();
 ```
-
+### Output: Undefined 
