@@ -1,3 +1,6 @@
+# Question 1 
+```jsx
+
 //QUESTION 1 USE CASE OF MAP FUNCTION 
 const users=[
     {name:"kaif",age:23},
@@ -9,6 +12,7 @@ const names=users.map(users=>users.name==="shahan")
 console.log(names)
 //output give new array which contain all the names
 //["kaif", "shahan", "umair", "shahrukh"].
+```
 
 //question 2 use case of map convert dates into string 
 const dates=[
