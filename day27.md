@@ -56,6 +56,7 @@ function foo() {
 }
 
 foo();
+//reference error 
 ```
 ```jsx
 show us reference error becouse of hoisting occured only in var not in let,conts 
