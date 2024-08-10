@@ -167,4 +167,17 @@ updateX();
 ```
 #### Output:
 20,10 let is blobk scope curly brace scoped variable
+# Question 10
+```jsx
+const person = {
+  name: "John",
+  age: 30,
+};
+
+Object.freeze(person);
+person.age = 40;
+
+console.log(person.age);
 ```
+#### with the object freeze methord we can freeze the objectss 
+
