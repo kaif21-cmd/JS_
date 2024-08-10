@@ -28,5 +28,11 @@ console.log(x)
 ```
 # Question 2
 ```jsx
-
+const arr1=[1,2,3,4]
+const arr2=[5,6,7,8]
+const arr3=[...arr1,...arr2]
+console.log(arr3)
+```
+```jsx
+[1,2,34,5,6,7,8]
 ```
