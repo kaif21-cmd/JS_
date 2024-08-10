@@ -180,9 +180,9 @@ person.age = 40;
 console.log(person.age);
 
 ```
-
-# Question 11
 #### with the object freeze methord we can freeze the objects
+# Question 11
+
 ```jsx
 let x = 10;
 
