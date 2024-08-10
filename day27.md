@@ -79,3 +79,25 @@ and also if we compare it
 console.log(a==b)
 it will show true due to same reference memory
 ```
+# Question 6
+```jsx
+console.log(typeof 42);
+console.log(typeof "Hello");
+console.log(typeof true);
+console.log(typeof [1, 2, 3]);
+console.log(typeof { name: "John", age: 25 });
+console.log(typeof null);
+console.log(typeof undefined);
+console.log(typeof function () {});
+```
+#### Output:
+```jsx
+number
+string
+boolean
+object
+object
+object
+undefined
+function
+```
