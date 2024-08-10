@@ -178,6 +178,22 @@ Object.freeze(person);
 person.age = 40;
 
 console.log(person.age);
+
 ```
-#### with the object freeze methord we can freeze the objectss 
+
+# Question 11
+#### with the object freeze methord we can freeze the objects
+```jsx
+let x = 10;
+
+function outer() {
+  console.log(x);
+
+  if (false) {
+    var x = 20;
+  }
+}
+
+outer();
+```
 
