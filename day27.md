@@ -137,4 +137,17 @@ getType(null) returns null because null is a special value in JavaScript.
 getType(undefined) returns "undefined" because it is a special value in JavaScript representing an uninitialized variable.
 getType(function() {}) returns "Function" because it is a function object, and the constructor name for a function is "Function".
 The getType function can be used to dynamically determine the type of values in JavaScript.
+# Question 8
+```jsx
+function calculateSum() {
+  console.log(result);
+  var num1 = 5;
+  let num2 = 10;
+  const num3 = 15;
+  var result = num1 + num2 + num3;
+}
 
+calculateSum();
+```
+#### Show Undefined due to hoisting
+if we used const let then it will show reference error 
