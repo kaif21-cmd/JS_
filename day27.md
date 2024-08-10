@@ -61,3 +61,13 @@ foo();
 ```jsx
 show us reference error becouse of hoisting occured only in var not in let,conts 
 ```
+# Question 5
+```jsx
+const a = [1, 2, 3];
+const b = a;
+
+b.push(4);
+
+console.log(a);
+console.log(b);
+```
