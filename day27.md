@@ -114,3 +114,27 @@ console.log(getType(function () {}));
 
 //The function should print "array" for "[]" and "null" for "null" types.
 ```
+output: 
+```jsx
+number
+string
+boolean
+Array
+Object
+null
+undefined
+Function
+```
+####
+The function getType takes a value as an argument and returns its type. If the value is null, it returns null. Otherwise, it uses the constructor.name property to determine the type of the value.
+
+getType(42) returns "number" because 42 is a numeric value.
+getType("Hello") returns "string" because "Hello" is a string.
+getType(true) returns "boolean" because true is a boolean value.
+getType([1, 2, 3]) returns "Array" because arrays are considered objects in JavaScript, and the constructor name for an array is "Array".
+getType({ name: "John", age: 25 }) returns "Object" because objects are considered objects in JavaScript, and the constructor name for an object is "Object".
+getType(null) returns null because null is a special value in JavaScript.
+getType(undefined) returns "undefined" because it is a special value in JavaScript representing an uninitialized variable.
+getType(function() {}) returns "Function" because it is a function object, and the constructor name for a function is "Function".
+The getType function can be used to dynamically determine the type of values in JavaScript.
+
