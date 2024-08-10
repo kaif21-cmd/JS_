@@ -151,3 +151,20 @@ calculateSum();
 ```
 #### Show Undefined due to hoisting
 if we used const let then it will show reference error 
+# Question 9
+```jsx
+let x = 10;
+
+function updateX() {
+  if (true) {
+    let x = 20;
+    console.log(x);
+  }
+  console.log(x);
+}
+
+updateX();
+```
+#### Output:
+20,10 let is blobk scope curly brace scoped variable
+```
