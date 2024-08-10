@@ -197,3 +197,12 @@ function outer() {
 outer();
 ```
 ### Output: Undefined 
+# Question 12
+```jsx
+let numbers = [1, 2, 3, 4, 5];
+numbers = numbers.map((number) => number * 2);
+console.log(numbers.reduce((total, num) => total + num));
+```
+### Output: map transform the array numbers=[2,4,6,8,10]
+and reduce methord reduce the whole array in the form of sum it will give 
+30 
