@@ -36,3 +36,12 @@ console.log(arr3)
 ```jsx
 [1,2,3,4,5,6,7,8]
 ```
+# Question 3 
+```jsx
+const ar1=[1,2,3,4]
+const ar2=[...ar1]
+ar2.push(5)
+console.log(ar2)
+console.log(ar1==ar2)
+```
+#### this is known as shaloow copy refernce not passed here if we compare then will show falses
