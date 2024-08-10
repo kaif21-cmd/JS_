@@ -71,3 +71,11 @@ b.push(4);
 console.log(a);
 console.log(b);
 ```
+### output is a=[1,2,3,4]
+b=[1,2,3,4]
+due to refernce pass here 
+and also if we compare it 
+```jsx
+console.log(a==b)
+it will show true due to same reference memory
+```
