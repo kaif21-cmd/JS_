@@ -45,3 +45,18 @@ console.log(ar2)
 console.log(ar1==ar2)
 ```
 #### this is known as shaloow copy refernce not passed here if we compare then will show falses
+# Question 4
+```jsx
+
+const x = 10;
+
+function foo() {
+  console.log(x);
+  const x = 20;
+}
+
+foo();
+```
+```jsx
+show us reference error becouse of hoisting occured only in var not in let,conts 
+```
