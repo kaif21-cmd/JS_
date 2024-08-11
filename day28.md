@@ -1,3 +1,20 @@
 # Day 28 Javascript 
+# Question 1 Remove first n elements of an array
 ```jsx
+function myfunction(a){
+    return a.slice(3)
+}
+const array=[1,2,3,4,5]
+const result=myfunction(array)
+console.log(result)
+output: [ 4, 5 ]
+```
+# Question 2 Get last n elements of an array Extract last 3 element from the array
+```jsx
+function myfunction(a){
+    return a.slice(-3)
+}
+const array=[1,2,3,4,5]
+const result=myfunction(array)
+console.log(result)
 ```
