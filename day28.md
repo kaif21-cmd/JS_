@@ -49,3 +49,13 @@ const result=myfunction(a)
 console.log(result)
 output: 5
 ```
+# Question 6 Count number of negative values in array
+```jsx
+function myfunction(a){
+    return a.filter(elem=>elem<0).length
+}
+const a=[-1,-2,3,4,-2]
+const result=myfunction(a)
+console.log(result)
+output : 3
+```
