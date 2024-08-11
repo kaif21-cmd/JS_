@@ -39,3 +39,13 @@ const result=(myfunction(a,2))
 console.log(result)
 output : [ 1, 3, 4 ]
 ```
+# Question 5 calculate the length of array
+```jsx
+function myfunction(a){
+    return a.length
+}
+const a=[1,2,3,4,2]
+const result=myfunction(a)
+console.log(result)
+output: 5
+```
