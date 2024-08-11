@@ -71,3 +71,26 @@ const result = myfunction(a);
 
 console.log(result);
 ```
+# Question 8 Return the average of an array of numbers
+```jsx
+function myfunction(a) {
+    return a.reduce((acc, curr) => acc + curr, 0)/a.length
+}
+
+const a = [1, 2, 3, 4, 2];
+const result = myfunction(a);
+
+console.log(result);
+
+```
+# Question 9 Merging of array
+```jsx
+const kaif=[1,2,3,4]
+const shaikh=[5,6,7,8]
+const merge=[...kaif,...shaikh]
+console.log(merge)
+output : [
+  1, 2, 3, 4,
+  5, 6, 7, 8
+
+```
