@@ -29,3 +29,13 @@ const result=myfunction(array)
 console.log(result)
 output: [ 1, 2, 3 ]
 ```
+# Question 4 Remove a specific array element
+```jsx
+function myfunction(a,b){
+    return a.filter(aitem=>aitem!==b)
+}
+const a=[1,2,3,4,2]
+const result=(myfunction(a,2))
+console.log(result)
+output : [ 1, 3, 4 ]
+```
