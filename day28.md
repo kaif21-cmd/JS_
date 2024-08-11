@@ -94,7 +94,7 @@ output : [
   5, 6, 7, 8
 
 ```
-# Merge the two array with out dupliacte elements also sort them
+# Question 10 Merge the two array with out dupliacte elements also sort them
 ```jsx
 const kaif=[5,2,8,4]
 const shaikh=[5,6,7,8]
