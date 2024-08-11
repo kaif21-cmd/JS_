@@ -94,3 +94,11 @@ output : [
   5, 6, 7, 8
 
 ```
+# Merge the two array with out dupliacte elements also sort them
+```jsx
+const kaif=[5,2,8,4]
+const shaikh=[5,6,7,8]
+const merge=[...new Set([...kaif,...shaikh])].sort((x,y)=>x-y)
+console.log(merge)
+output : [ 2, 4, 5, 6, 7, 8 ]
+```
