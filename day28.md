@@ -59,3 +59,15 @@ const result=myfunction(a)
 console.log(result)
 output : 3
 ```
+# Question 7 Calculate the sum of an array of numbers
+
+```jsx
+function myfunction(a) {
+    return a.reduce((acc, curr) => acc + curr, 0);
+}
+
+const a = [-1, -2, 3, 4, -2];
+const result = myfunction(a);
+
+console.log(result);
+```
