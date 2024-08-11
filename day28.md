@@ -17,4 +17,15 @@ function myfunction(a){
 const array=[1,2,3,4,5]
 const result=myfunction(array)
 console.log(result)
+output: [ 3, 4, 5 ]
+```
+# Question 3 Get first N element from index
+```jsx
+function myfunction(a){
+    return a.slice(0,3)
+}
+const array=[1,2,3,4,5]
+const result=myfunction(array)
+console.log(result)
+output: [ 1, 2, 3 ]
 ```
