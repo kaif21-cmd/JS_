@@ -116,3 +116,18 @@ console.log(window.cricketer); //output is undefined
 //explanation VAR se bana variable window object me add hojata hai
 // let se bana varibale ni hota  THAT WHY UNDEFINED 
 ```
+# Question 7
+```jsx
+//SPOTIFY
+function show(){
+    this.name="kaif";
+    this.showsdetail=()=>{
+        console.log(this.name)
+    }
+}
+const data=new show();
+const fn=data.showsdetail;
+fn();
+//output kaif
+// js me arrow function hota hai wo hamesha parent scope ko point karta hai 
+```
