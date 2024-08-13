@@ -159,3 +159,9 @@ console.log([1,2].toString());  // Output: "1,2"
 // empty array empty string me tabhi convert hoga jab different data type se compare hoga 
 
 ```
+# Question 10
+```jsx
+console.log([]==[]) //show false because memory reference alag alag hota hai array and objects me 
+console.log([]===[])//false
+console.log({}=={})//false
+```
