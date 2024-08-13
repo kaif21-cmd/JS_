@@ -59,3 +59,49 @@ function Man() {
 const person1 = new Man(); // This works correctly
 console.log(person1.name);
 ```
+# More difference 
+### this Binding:
+#### Normal Function: The value of this depends on how the function is called. It can be dynamically changed using methods like call, apply, or bind.
+#### Arrow Function: Arrow functions do not have their own this context. They inherit this from the surrounding lexical scope (the context in which the function was defined).
+```jsx
+const obj = {
+  value: 10,
+  normalFunction: function() {
+    console.log(this.value); // `this` refers to `obj`, so it prints 10
+  },
+  arrowFunction: () => {
+    console.log(this.value); // `this` is inherited from the surrounding scope
+  }
+};
+
+obj.normalFunction(); // Prints: 10
+obj.arrowFunction(); // Prints: undefined (or `this` value of the global scope in non-strict mode)
+
+```
+#### arguments Object:
+Normal Function: Has access to the arguments object, which is an array-like object containing all the arguments passed to the function.
+Arrow Function: Does not have an arguments object. You can still use rest parameters (...args) to achieve a similar effect.
+```jsx
+function normalFunction() {
+  console.log(arguments); // Prints: [Arguments] { '0': 1, '1': 2, '2': 3 }
+}
+
+const arrowFunction = (...args) => {
+  console.log(args); // Prints: [ 1, 2, 3 ]
+};
+
+normalFunction(1, 2, 3);
+arrowFunction(1, 2, 3);
+
+```
+#### Implicit return:
+Normal Function: Requires an explicit return statement to return a value.
+Arrow Function: Can have an implicit return if there is only a single expression
+```jsx
+function normalFunction(a, b) {
+  return a + b; // Explicit return
+}
+
+const arrowFunction = (a, b) => a + b; // Implicit return
+
+```
