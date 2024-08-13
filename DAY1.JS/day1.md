@@ -28,3 +28,34 @@ console.log(fetch());
 //kyun ni milega ?
 //kyunki fetch() call hoga but us se phle let A declare hogya 
 ```
+
+# Question 4 Diference between array fucction or normal function
+```jsx
+//OLX 
+//This is fundamental differnce between arrow function and normal function
+//arrow function not invoked with new keyword  //invoked means lagu krna
+//this is fundamental differnce between arrow function and normal function
+const Person = () => {
+    this.name = 'kaif'; // `this` does not refer to a new object here
+    return this; // `this` refers to the lexical scope
+}
+
+try {
+    const person = new Person(); // This will throw an error
+    console.log(person.name);
+} catch (error) {
+    console.error("Error:", error.message); // Arrow functions cannot be used with `new`
+}
+ //show error 
+//arrow function not invoked with new keyword  //invoked means lagu krna
+//this is fundamental differnce between arrow function and normal function
+
+// Regular function can be used as a constructor
+function Man() {
+    this.name = "kaif";
+    return this; // `this` refers to the new object created
+}
+
+const person1 = new Man(); // This works correctly
+console.log(person1.name);
+```
