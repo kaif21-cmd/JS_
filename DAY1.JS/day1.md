@@ -165,3 +165,11 @@ console.log([]==[]) //show false because memory reference alag alag hota hai arr
 console.log([]===[])//false
 console.log({}=={})//false
 ```
+# Question 11
+### Now referece is same here so it will return true 
+```jsx
+console.log([]==[])
+let a={}
+let b=a;
+console.log(a==b)
+```
