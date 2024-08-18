@@ -39,3 +39,12 @@ console.log(result);
  console.log(result)
 ouput : [ 1, 2, 3, 5, 6 ]
 ```
+# Question 5 Remove Duplicate using filter methord 
+```jsx
+var string="hello kaif hello "
+let result=string.split(' ').filter((item,index,arr)=>{
+    return arr.indexOf(item)==index
+}).join(' ')
+console.log(result)
+output :  hello kaif 
+```
