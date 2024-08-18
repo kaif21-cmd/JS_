@@ -147,5 +147,6 @@ let vowelCount = string.split('').filter(char => {
 }).length;
 
 console.log("Number of vowels in the string:", vowelCount);
+output: Number of vowels in the string: 5
 
 ```
