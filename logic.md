@@ -91,3 +91,31 @@ let c;
    b=c;
 console.log (a,b,c)
 ```
+# Question 9 Check Palindrome 
+```jsx
+function checkPalindrome() {
+    const string = "amma";
+    let reversedString = string.split('').reverse().join('');
+    console.log(reversedString);
+    if (string === reversedString) {
+        console.log("The string is a palindrome");
+    } else {
+        console.log("The string is not a palindrome");
+    }
+}
+
+function checkNumberPalindrome(number) {
+    let originalNumber = number.toString();
+    let reversedNumber = originalNumber.split('').reverse().join('');
+    if (originalNumber === reversedNumber) {
+        console.log("The number is a palindrome");
+    } else {
+        console.log("The number is not a palindrome");
+    }
+}
+
+checkPalindrome(); // Check if the string is a palindrome
+checkNumberPalindrome(12321); // Check if the number is a palindrome
+checkNumberPalindrome(12345); // Check if the number is a palindrome
+
+```
