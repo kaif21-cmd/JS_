@@ -81,7 +81,7 @@ else{
 Enter the Number5
 the factorial is 120
 ```
-Question 8 Swaping of numbers 
+# Question 8 Swaping of numbers 
 ```jsx
 let a=10;
 let b=20;
