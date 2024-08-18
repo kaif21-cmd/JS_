@@ -53,11 +53,15 @@ output :  hello kaif
 var string="hello kaif"
 let result=string.split(' ').reverse().join(' ')
 console.log(result)
+kaif hello
+
 
 var number = 2345;
 
 let reversedNumber = Number(String(number).split('').reverse().join(''));
 
 console.log(reversedNumber);
+
+5432
 
 ```
