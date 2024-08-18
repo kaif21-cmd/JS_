@@ -137,3 +137,15 @@ function longestWord(){
 console.log(longestWord())
 
 ```
+# Question 11 Count The total Number of Vowels In the String 
+```jsx
+var string = "hello kaif";
+var vowels = ['a', 'e', 'i', 'o', 'u'];
+
+let vowelCount = string.split('').filter(char => {
+    return vowels.includes(char);
+}).length;
+
+console.log("Number of vowels in the string:", vowelCount);
+
+```
