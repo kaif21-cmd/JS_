@@ -65,3 +65,19 @@ console.log(reversedNumber);
 5432
 
 ```
+# Question 7 Factorial of Number 
+```jsx
+const number=parseInt(prompt('Enter the Number'))
+if(number<0){
+    console.log(`the factroial is 1`)
+}
+else{
+    let fact=1;
+    for(i=1;i<=number;i++){
+        fact=fact*i
+    }
+    console.log(`the factorial is ${fact}`)
+}
+Enter the Number5
+the factorial is 120
+```
