@@ -48,7 +48,7 @@ let result=string.split(' ').filter((item,index,arr)=>{
 console.log(result)
 output :  hello kaif 
 ```
-# Question Reverse a Number or string 
+# Question 6  Reverse a Number or string 
 ```jsx
 var string="hello kaif"
 let result=string.split(' ').reverse().join(' ')
