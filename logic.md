@@ -150,3 +150,22 @@ console.log("Number of vowels in the string:", vowelCount);
 output: Number of vowels in the string: 5
 
 ```
+# Question 12 Count The total Number of Vowels In the String  Second Methord 
+```jsx
+function vowelcount(){
+     var vowels=["a","i","e","o","u"]
+     var str="kaif"
+     count=0;
+     for(var letter of str.toLowerCase()){
+         if(vowels.includes(letter)){
+             count++;
+             console.log(letter)
+         }
+     }
+     console.log(count)
+}
+vowelcount()
+output : a
+i
+2
+```
