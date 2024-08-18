@@ -199,3 +199,16 @@ function charactercount(str,letter){
 charactercount("kaifkaif","k")
 
 ```
+# Question same for Array Occourence of the Number 
+```jsx
+function charactercount(ar,no){
+    let count=0;
+    for(let i=0;i<ar.length;i++){
+        if(ar[i]===no){
+            count++;
+        }
+    }
+    console.log(count)
+}
+charactercount([2,3,1,2,1],1)
+```
