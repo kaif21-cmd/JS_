@@ -184,3 +184,18 @@ const result=getsumzero([-3,1,2,3,4])
 console.log(result)
 output : [ 3, -3 ]
 ```
+# Question Count the Occourence of Character
+```jsx
+function charactercount(str,letter){
+    let count=0;
+    for(let i=0;i<str.length-1;i++){
+        if(str.charAt(i)===letter){
+            count++;
+        }
+    }
+    console.log(count)
+    return count
+}
+charactercount("kaifkaif","k")
+
+```
