@@ -119,3 +119,21 @@ checkNumberPalindrome(12321); // Check if the number is a palindrome
 checkNumberPalindrome(12345); // Check if the number is a palindrome
 
 ```
+# Question Longest Word In the string 
+```jsx
+function longestWord(){
+   let string = "hello kaif what are you doing "
+   var arr= string.split(' ')
+   var longest=" "
+   for(var i=0; i<arr.length; i++){
+      
+        if (arr[i].length > longest.length)
+        {
+            longest=arr[i];
+        }
+   }
+   return longest
+}
+console.log(longestWord())
+
+```
