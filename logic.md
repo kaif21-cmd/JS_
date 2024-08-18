@@ -169,3 +169,18 @@ output : a
 i
 2
 ```
+# Question 13  To find a first pair whose sum is zero
+```jsx
+function getsumzero(ar){
+    for(let i=0;i<ar.length;i++){
+        for(let j=i+1;j<ar.length;j++){
+            if(ar[i]+ar[j]===0){
+                return [ar[j],ar[i]]
+            }
+        }
+    }
+}
+const result=getsumzero([-3,1,2,3,4])
+console.log(result)
+output : [ 3, -3 ]
+```
