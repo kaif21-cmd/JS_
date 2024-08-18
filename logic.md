@@ -32,3 +32,10 @@ let result = [...new Set(string)].join('');
 console.log(result);
 
 ```
+ # Question 4 Removing the duplicate from an array 
+ ```jsx
+ var ar=[1,2,3,1,2,5,6,2,3]
+ let result=[...new Set(ar)]
+ console.log(result)
+ouput : [ 1, 2, 3, 5, 6 ]
+```
