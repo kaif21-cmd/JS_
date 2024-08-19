@@ -243,7 +243,7 @@ output: [1, 2, 3, 4]
 
 
 ```
-# Question Intersction of an Array
+# Question 18 Intersction of an Array
 ```jsx
 function intersectionElements(ar1, ar2) {
     let intersection = ar1.filter(element => ar2.includes(element));
@@ -252,4 +252,15 @@ function intersectionElements(ar1, ar2) {
 
 intersectionElements([1, 2, 3, 4], [3, 4, 5, 6]);
 output: [ 3, 4 ]
+```
+# Question 19 Sum of an Array 
+```jsx
+function sumarray(ar){
+    let sum=0;
+    for(var i=0;i<ar.length;i++){
+        sum=sum+ar[i]
+    }
+    return sum;
+}
+console.log(sumarray(1234))
 ```
