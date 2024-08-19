@@ -264,3 +264,13 @@ function sumarray(ar){
 }
 console.log(sumarray(1234))
 ```
+# Question Sum of the array
+```jsx
+function sumofarray(ar) {
+    let sum = ar.reduce((a, b) => a + b, 0);
+    return sum;
+}
+
+console.log(sumofarray([1, 2, 3])); // Output: 6
+
+```
