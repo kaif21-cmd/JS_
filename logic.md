@@ -230,3 +230,16 @@ console.log(missingno([1, 2, 3, 5, 6, 7, 8, 9]));   // Output: 4 (missing number
 
 
 ```
+# Question 17 Union of Two array 
+```jsx
+function uniqueElements(ar1, ar2) {
+    let ar = [...ar1, ...ar2];
+    let array = [...new Set(ar)];
+    console.log(array);
+}
+
+uniqueElements([1, 2, 3, 4], [1, 4, 2, 3]);
+output: [1, 2, 3, 4]
+
+
+```
