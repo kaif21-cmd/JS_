@@ -184,7 +184,7 @@ const result=getsumzero([-3,1,2,3,4])
 console.log(result)
 output : [ 3, -3 ]
 ```
-# Question Count the Occourence of Character
+# Question 14 Count the Occourence of Character
 ```jsx
 function charactercount(str,letter){
     let count=0;
@@ -199,7 +199,7 @@ function charactercount(str,letter){
 charactercount("kaifkaif","k")
 
 ```
-# Question same for Array Occourence of the Number 
+# Question 15 same for Array Occourence of the Number 
 ```jsx
 function charactercount(ar,no){
     let count=0;
@@ -211,4 +211,22 @@ function charactercount(ar,no){
     console.log(count)
 }
 charactercount([2,3,1,2,1],1)
+```
+# Question 16 Find the Missing Number in the array
+```jsx
+function missingno(arr) {
+    var x = 1; // Start with 1
+    for (var i = 0; i < arr.length; i++) {
+        if (arr[i] != x) {
+            return x; // Return the missing number
+        }
+        x++;
+    }
+    return null; // Return null if no number is missing
+}
+
+console.log(missingno([1, 2, 3, 4, 5, 6, 7, 8, 9])); // Output: null (no missing number)
+console.log(missingno([1, 2, 3, 5, 6, 7, 8, 9]));   // Output: 4 (missing number is 4)
+
+
 ```
