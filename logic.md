@@ -243,3 +243,13 @@ output: [1, 2, 3, 4]
 
 
 ```
+# Question Intersction of an Array
+```jsx
+function intersectionElements(ar1, ar2) {
+    let intersection = ar1.filter(element => ar2.includes(element));
+    console.log(intersection);
+}
+
+intersectionElements([1, 2, 3, 4], [3, 4, 5, 6]);
+output: [ 3, 4 ]
+```
