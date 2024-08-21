@@ -325,9 +325,24 @@ Way 7: Explicitly Remove Array Elements Using the Delete Operator
          delete ar[4]; // delete element with index 4
          console.log( ar ); // [1, 2, 3, 4, undefined, 6]
 ```
-# Question Reversing a NUmber 
+# Question 21 Reversing a NUmber 
 ```jsx
 var number=1234
 var result=number.toString().split('').reverse().join('')
 console.log(result)
+```
+# Question 22 Largest Numnber in the array 
+```jsx
+function largestno(ar){
+    var largest=ar[0]
+    for(var i=1;i<ar.length;i++){
+        if(ar[i]>ar[largest]){
+            largest=ar[i]
+        }
+    }
+    return largest
+}
+const a=largestno([1,2,8,4,5])
+console.log(a)
+output: 8
 ```
