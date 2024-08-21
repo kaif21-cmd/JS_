@@ -352,6 +352,7 @@ function secondlargest(ar){
     return ar.sort((a,b)=>b-a)[1]
 }
 console.log(secondlargest(['1', '2', '3', '4', '9']))
+output:4
 ```
 # Question 24 Find the Word In the String
 ```jsx
