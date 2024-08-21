@@ -346,4 +346,10 @@ const a=largestno([1,2,8,4,5])
 console.log(a)
 output: 8
 ```
-# Question 23 
+# Question 23 Second Largest Number in the array
+```jsx
+function secondlargest(ar){
+    return ar.sort((a,b)=>b-a)[1]
+}
+console.log(secondlargest(['1', '2', '3', '4', '9']))
+```
