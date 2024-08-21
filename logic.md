@@ -325,3 +325,9 @@ Way 7: Explicitly Remove Array Elements Using the Delete Operator
          delete ar[4]; // delete element with index 4
          console.log( ar ); // [1, 2, 3, 4, undefined, 6]
 ```
+# Question Reversing a NUmber 
+```jsx
+var number=1234
+var result=number.toString().split('').reverse().join('')
+console.log(result)
+```
