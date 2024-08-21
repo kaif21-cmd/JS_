@@ -359,6 +359,7 @@ function word(str){
     return str.includes("kaif")
 }
 console.log(word("Hello world, welcome to the universe."))
+output:true
 ```
 # Question 25 To check weather Property Exist or not in object 
 ```jsx
@@ -367,4 +368,5 @@ let students={
     age:23
 }
 console.log('name' in students )
+output:true
 ```
