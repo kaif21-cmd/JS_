@@ -353,3 +353,10 @@ function secondlargest(ar){
 }
 console.log(secondlargest(['1', '2', '3', '4', '9']))
 ```
+# Question 24 Find the Word In the String
+```jsx
+function word(str){
+    return str.includes("kaif")
+}
+console.log(word("Hello world, welcome to the universe."))
+``
