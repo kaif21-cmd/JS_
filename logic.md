@@ -428,3 +428,24 @@ let b = moveZerosToEnd([1, 2, 0, 1, 0, 3, 0, 6, 0]);
 console.log(b); // Output: [1, 2, 1, 3, 6, 0, 0, 0, 0]
 
 ```
+# Question 29 Triplet Sum 
+```jsx
+function triplet(ar,n){
+    ar.sort((a,b)=>b-a);
+    for(let i=0;i<ar.length;i++){
+        for(let j=i+1;j<ar.length;j++){
+            for(let k=j+1;k<ar.length;k++){
+                if(ar[i]+ar[j]+ar[k]===2){
+             console.log(`${ar[i]}, ${ar[j]}, ${ar[k]}`);
+                }
+            }
+        }
+    }
+}
+let ar=[1,1,2,-1,1,3]
+triplet(ar,0);
+output:
+2, 1, -1
+2, 1, -1
+2, 1, -1
+```
