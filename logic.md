@@ -456,4 +456,4 @@ const convert={...ar}
 console.log(convert)
 output: { '0': 'kaif', '1': 'shaikh', '2': 'siddique' }
 ```
-kaif a b c d e f h  i 
+
