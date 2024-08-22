@@ -371,7 +371,7 @@ let students={
 console.log('name' in students )
 output:true
 ```
-# Question 26 Find the negative number in the Array 
+# Question 26 Find the negative number in the Array and length
 ```jsx
 function negative(ar) {
     let a = ar.filter((elem) => elem < 0);
