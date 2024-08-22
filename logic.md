@@ -383,3 +383,17 @@ const result = negative([1, 2, -1, 3, -1, -2]);
 console.log(result); // Output: 3
 
 ```
+# from different way 
+```jsx
+function negative(ar){
+    let count=0;
+    for(let i=0;i<ar.length;i++){
+        if(ar[i]<0){
+            count++
+        }
+    }
+    return count
+}
+const result = negative([-1, -2, -3, 4, 6, 7]);
+console.log(result); // Output: 3
+```
