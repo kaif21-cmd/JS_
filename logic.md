@@ -397,7 +397,7 @@ function negative(ar){
 const result = negative([-1, -2, -3, 4, 6, 7]);
 console.log(result); // Output: 3
 ```
-# 27 Question Adding Elements to Array
+# Question 27 Question Adding Elements to Array
 ```jsx
 function addelem(ar) {
     for (let i = 5; i <= 10; i++) {
@@ -411,4 +411,20 @@ addelem([1,2,3,4]);
   1, 2, 3, 4,  5,
   6, 7, 8, 9, 10
 ]
+```
+# Question 28 Moving zeros at one side
+```jsx
+function moveZerosToEnd(ar) {
+    let nonZeros = ar.filter((elem) => elem !== 0);
+
+    let zeros = ar.filter((elem) => elem === 0);
+    
+    // Concatenate non-zeros with zeros
+    let result = [...nonZeros, ...zeros];
+    return result;
+}
+
+let b = moveZerosToEnd([1, 2, 0, 1, 0, 3, 0, 6, 0]);
+console.log(b); // Output: [1, 2, 1, 3, 6, 0, 0, 0, 0]
+
 ```
