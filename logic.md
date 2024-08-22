@@ -449,3 +449,9 @@ output:
 2, 1, -1
 2, 1, -1
 ```
+# Question Converting Object to array 
+```jsx
+const ar=["kaif","shaikh","siddique"]
+const convert={...ar}
+console.log(ar)
+```
