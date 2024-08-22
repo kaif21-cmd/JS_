@@ -371,3 +371,15 @@ let students={
 console.log('name' in students )
 output:true
 ```
+# Question 26 Find the negative number in the Array 
+```jsx
+function negative(ar) {
+    let a = ar.filter((elem) => elem < 0);
+    console.log(a);
+    return a.length; // Return the length of the filtered array
+}
+
+const result = negative([1, 2, -1, 3, -1, -2]);
+console.log(result); // Output: 3
+
+```
