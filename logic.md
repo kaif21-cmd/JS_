@@ -397,3 +397,18 @@ function negative(ar){
 const result = negative([-1, -2, -3, 4, 6, 7]);
 console.log(result); // Output: 3
 ```
+# 27 Question Adding Elements to Array
+```jsx
+function addelem(ar) {
+    for (let i = 5; i <= 10; i++) {
+        ar.push(i);
+    }
+    console.log(ar);
+}
+
+addelem([1,2,3,4]);
+[
+  1, 2, 3, 4,  5,
+  6, 7, 8, 9, 10
+]
+```
