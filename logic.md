@@ -502,4 +502,10 @@ const entriesArray = Object.entries(obj);
 console.log(entriesArray); // Output: [['a', 1], ['b', 2], ['c', 3]]
 
 ```
+# Converting Array to object
+```jsx
+const array=[10,20,30]
+const obj={...array}
+console.log(obj)
 
+```
