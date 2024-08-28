@@ -477,14 +477,14 @@ output:
 2, 1, -1
 2, 1, -1
 ```
-# Question Converting Object to array 
+# Question 30 Converting Object to array 
 ```jsx
 const ar=["kaif","shaikh","siddique"]
 const convert={...ar}
 console.log(convert)
 output: { '0': 'kaif', '1': 'shaikh', '2': 'siddique' }
 ```
-# Question converting an Object to array 
+# Question 31 converting an Object to array 
 ```jsx
 const obj = { a: 1, b: 2, c: 3 };
 const valuesArray = Object.values(obj);
@@ -502,14 +502,14 @@ const entriesArray = Object.entries(obj);
 console.log(entriesArray); // Output: [['a', 1], ['b', 2], ['c', 3]]
 
 ```
-# Converting Array to object
+# Question 32 Converting Array to object
 ```jsx
 const array=[10,20,30]
 const obj={...array}
 console.log(obj)
 
 ```
-# Question reverse of an object 
+# Question 33 reverse of an object 
 ```jsx
 const arr=[1,2,3,4,5]
 const result={...arr}
