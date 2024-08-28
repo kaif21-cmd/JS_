@@ -107,7 +107,7 @@ c = temp;
 console.log(a, b, c); // Output: 30, 50, 20
 
 ```
-# Question using Destruncting assignmnet
+# Question using Destruncting assignment
 ```jsx
 let a = 20;
 let b = 30;
