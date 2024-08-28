@@ -509,3 +509,12 @@ const obj={...array}
 console.log(obj)
 
 ```
+# Question reverse of an object 
+```jsx
+const arr=[1,2,3,4,5]
+const result={...arr}
+console.log(result)
+const values=Object.values(result)
+console.log(values.reverse())
+
+```
