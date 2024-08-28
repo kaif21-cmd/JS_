@@ -91,6 +91,22 @@ let c;
    b=c;
 console.log (a,b,c)
 ```
+
+# Question Swaping of Number by Temp varaibale
+```jsx
+let a = 20;
+let b = 30;
+let c = 50;
+
+// Swapping the values
+let temp = a;
+a = b;
+b = c;
+c = temp;
+
+console.log(a, b, c); // Output: 30, 50, 20
+
+```
 # Question 9 Check Palindrome 
 ```jsx
 function checkPalindrome() {
