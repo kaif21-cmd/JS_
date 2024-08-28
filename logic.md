@@ -107,6 +107,18 @@ c = temp;
 console.log(a, b, c); // Output: 30, 50, 20
 
 ```
+# Question using Destruncting assignmnet
+```jsx
+let a = 20;
+let b = 30;
+let c = 50;
+
+// Swapping the values using destructuring
+[a, b, c] = [b, c, a];
+
+console.log(a, b, c); // Output: 30, 50, 20
+
+```
 # Question 9 Check Palindrome 
 ```jsx
 function checkPalindrome() {
