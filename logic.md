@@ -518,3 +518,11 @@ const values=Object.values(result)
 console.log(values.reverse())
 
 ```
+# Question 34 Find the Word in the String
+```jsx
+function word(str){
+    return str.includes("world")
+}
+console.log(word("hello worlds"))
+output:true
+```
