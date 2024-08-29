@@ -526,3 +526,16 @@ function word(str){
 console.log(word("hello worlds"))
 output:true
 ```
+# Question 35  Sort an array of an element by parity means even then odd elements
+function sortByParity(arr){
+ let even =[]
+ let odd =[]
+ let result=[]
+ for(let i=0; i<arr.length; i++){
+   if(arr[i]%2 ===0 ) even.push(arr[i]) 
+   else odd.push(arr[i])
+ }
+result = even.concat(odd)
+return result
+}
+console.log(sortByParity([1,2,3,4,5,6,7,8,9]))
