@@ -527,6 +527,8 @@ console.log(word("hello worlds"))
 output:true
 ```
 # Question 35  Sort an array of an element by parity means even then odd elements
+```jsx
+
 function sortByParity(arr){
  let even =[]
  let odd =[]
@@ -539,3 +541,4 @@ result = even.concat(odd)
 return result
 }
 console.log(sortByParity([1,2,3,4,5,6,7,8,9]))
+```
