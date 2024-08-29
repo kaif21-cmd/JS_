@@ -542,3 +542,12 @@ return result
 }
 console.log(sortByParity([1,2,3,4,5,6,7,8,9]))
 ```
+# Question 36 Coomon Elements In the Array 
+```jsx
+function kaif(a,b){
+    return a.filter((elem)=> b.includes(elem))
+}
+a=[1,2,3,4]
+b=[1,5,6,7,2]
+console.log(kaif(a,b))
+```
