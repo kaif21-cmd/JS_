@@ -92,4 +92,25 @@ function countfrequency(ar){
 const result = countfrequency([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]);
 console.log(result); 
 ```
+# Question 9 second smallest and Second largest Number 
+```jsx
+function findSecondSmallestAndLargest(ar) {
+    // Sort the array in ascending order
+    let sortedArray = ar.sort((a, b) => a - b);
+    
+    // Second smallest is the second element in the sorted array
+    let secondSmallest = sortedArray[1];
+    
+    // Second largest is the second last element in the sorted array
+    let secondLargest = sortedArray[sortedArray.length - 2];
+    
+    console.log("Second Smallest:", secondSmallest);
+    console.log("Second Largest:", secondLargest);
+}
 
+findSecondSmallestAndLargest([1, 2, 3, 4]); 
+// Output:
+// Second Smallest: 2
+// Second Largest: 3
+
+```
