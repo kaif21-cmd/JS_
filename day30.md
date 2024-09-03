@@ -64,7 +64,7 @@ const result = reverse([1, 2, 3, 4, 5]);
 console.log(result);  // Output: [5, 4, 3, 2, 1]
 
 ```
-# Question Reverse a String 
+# Question 7 Reverse a String 
 ```jsx
 function reverse(str){
     let result=str.split('').reverse().join('')
