@@ -74,4 +74,21 @@ const result=reverse("kaif")
 console.log(result)
 
 ```
+# Question 8 Count the Frequency of Element in the Array
+```jsx
+function countfrequency(ar){
+    const freq={}
+    ar.forEach(item=>{
+        if(freq[item]){
+            freq[item]+=1
+        }
+        else{
+            freq[item]=1
+        }
+    })
+    return freq
+}
+const result = countfrequency([1, 2, 2, 3, 3, 3, 4, 4, 4, 4]);
+console.log(result); 
+```
 
