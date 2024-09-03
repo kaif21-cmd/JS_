@@ -26,11 +26,14 @@ console.log(modifiedArray); // Output: [2, 2, 3, 2, 4, 2]
 ```
 # Question 3 Replace all zeros with one 
 ```jsx
-function replaceAll(str) {
-    return str.replace(/a/g, 'b'); // Replace all 'a' with 'b'
+function replaceOnesWithTwos(arr) {
+    return arr.map(num => num === 1 ? 2 : num);
 }
 
-const result = replaceAll("kaif");
-console.log(result); // Output: "kbif"
+// Example usage
+const originalArray = [1, 2, 3, 1, 4, 1];
+const modifiedArray = replaceOnesWithTwos(originalArray);
+console.log(modifiedArray); // Output: [2, 2, 3, 2, 4, 2]
+
 
 ```
