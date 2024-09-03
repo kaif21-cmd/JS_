@@ -49,4 +49,19 @@ function reverse(ar){
 const result=reverse([1,2,3,4,5])
 console.log(result)
 ```
+# Question 6 Reverse an array byu second methord 
+```jsx
+function reverse(ar) {
+    let reversed = [];  // Renamed variable to 'reversed' for clarity
+    for (let i = ar.length - 1; i >= 0; i--) {
+        reversed.push(ar[i]);  // Add each element to the 'reversed' array
+    }
+    return reversed;  // Return the reversed array
+}
+
+// Example usage
+const result = reverse([1, 2, 3, 4, 5]);
+console.log(result);  // Output: [5, 4, 3, 2, 1]
+
+```
 
