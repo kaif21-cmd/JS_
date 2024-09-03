@@ -40,3 +40,13 @@ const result = replaceAll("kaif");
 console.log(result); // Output: "kbif"
 
 ```
+# Question 5 Reverse a Array 
+```jsx
+function reverse(ar){
+    let reverse=ar.reverse()
+    return reverse
+}
+const result=reverse([1,2,3,4,5])
+console.log(result)
+```
+
