@@ -26,4 +26,11 @@ console.log(modifiedArray); // Output: [2, 2, 3, 2, 4, 2]
 ```
 # Question 3 Replace all zeros with one 
 ```jsx
+function replaceAll(str) {
+    return str.replace(/a/g, 'b'); // Replace all 'a' with 'b'
+}
+
+const result = replaceAll("kaif");
+console.log(result); // Output: "kbif"
+
 ```
