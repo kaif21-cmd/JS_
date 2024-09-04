@@ -15,7 +15,13 @@ klargest([1, 2, 3, 4, 5], 2); // Output: 5 4
 ```
 # Question 2 K smaleest Number in the array 
 ```jsx
-
+function klargest(ar,k){
+    ar.sort((a,b)=>b-a)
+    for(let i=ar.length-1;i>=ar.length-k;i--){
+        console.log(ar[i]+" ")
+    }
+}
+klargest([1,2,3,4,5],2)
 
 ```
 # Question 3 Replace all zeros with one 
