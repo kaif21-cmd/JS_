@@ -551,3 +551,16 @@ a=[1,2,3,4]
 b=[1,5,6,7,2]
 console.log(kaif(a,b))
 ```
+# Question 37 Unique Number in the Array 
+```jsx
+function findUnique(ar) {
+    let xorSum = 0;
+    for (let i = 0; i < ar.length; i++) {
+        xorSum ^= ar[i];
+    }
+    return xorSum;
+}
+
+console.log(findUnique([1, 2, 3, 2, 1]));  // Output: 3
+
+```
