@@ -564,3 +564,14 @@ function findUnique(ar) {
 console.log(findUnique([1, 2, 3, 2, 1]));  // Output: 3
 
 ```
+# 38 Unique Alphabet in an String 
+```jsx
+function unique(str){
+    let unique=0;
+    for(let i=0;i<str.length;i++){
+        unique=unique^str.charCodeAt(i)
+    }
+    return String.fromCharCode(unique)
+}
+console.log(unique("abacbbbbbbbbbaaaaaaaaaaaaaa"))
+```
