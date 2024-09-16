@@ -591,4 +591,12 @@ const sum=ar.map((num,index)=>ar2[index]-num)
 console.log(sum)
 [ 4, 4, 4, 4 ]
 ```
-
+# Question 41 Adding of three array
+```jsx
+const ar=[1,2,3,4]
+const ar2=[5,6,7,8]
+const ar3=[9,10,11,12,13]
+const sum=ar.map((num,index)=>num+ar2[index]+ar3[index])
+console.log(sum)
+[ 15, 18, 21, 24 ]
+```
