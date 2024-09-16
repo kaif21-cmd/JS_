@@ -564,7 +564,7 @@ function findUnique(ar) {
 console.log(findUnique([1, 2, 3, 2, 1]));  // Output: 3
 
 ```
-# 38 Unique Alphabet in an String 
+#  Question 38 Unique Alphabet in an String 
 ```jsx
 function unique(str){
     let unique=0;
@@ -575,7 +575,7 @@ function unique(str){
 }
 console.log(unique("abacbbbbbbbbbaaaaaaaaaaaaaa"))
 ```
-# 39 Adding two Array
+#  Question 39 Adding two Array
 ```jsx
 const ar=[1,2,3,4]
 const ar2=[5,6,7,8]
@@ -583,7 +583,7 @@ const sum=ar.map((num,index)=>num+ar2[index])
 console.log(sum)
 [ 6, 8, 10, 12 ]
 ```
-# 40 Minus of two array
+#  Question 40 Minus of two array
 ```jsx
 const ar=[1,2,3,4]
 const ar2=[5,6,7,8]
