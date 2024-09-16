@@ -575,3 +575,20 @@ function unique(str){
 }
 console.log(unique("abacbbbbbbbbbaaaaaaaaaaaaaa"))
 ```
+# 39 Adding two Array
+```jsx
+const ar=[1,2,3,4]
+const ar2=[5,6,7,8]
+const sum=ar.map((num,index)=>num+ar2[index])
+console.log(sum)
+[ 6, 8, 10, 12 ]
+```
+# 40 Minus of two array
+```jsx
+const ar=[1,2,3,4]
+const ar2=[5,6,7,8]
+const sum=ar.map((num,index)=>ar2[index]-num)
+console.log(sum)
+[ 4, 4, 4, 4 ]
+```
+
