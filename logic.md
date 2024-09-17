@@ -617,3 +617,13 @@ function anagram(){
 anagram()
 output : True
 ```
+# Question Longest Word in the String 
+```jsx
+function longestword(){
+    var str="hello my name is kaif shaikh"
+    var longestword=str.split(' ').sort((a,b)=>{return b.length-a.length })
+    console.log(longestword[0])
+    console.log(longestword[0].length)
+}
+longestword()
+```
