@@ -647,3 +647,14 @@ const result=largestpair([9,10,11,3,3,3,2,2,1])
 console.log(result)
 output:3
 ```
+# Question 46 Alernate Text Uppercase
+```jsx
+function alternattext(str){
+    var char=str.toLowerCase().split('')
+    for(var i=0;i<char.length;i=i+2){
+        char[i]=char[i].toUpperCase()
+    }
+    return char.join('')
+}
+console.log(alternattext("Kaif Shaikh"))
+```
