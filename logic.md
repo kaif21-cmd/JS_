@@ -627,7 +627,7 @@ function longestword(){
 }
 longestword()
 ```
-# Largest Pair sum in an array 
+# Question 44 Largest Pair sum in an array 
 ```jsx
 function largestpair(n){
     const num=n.sort((a,b)=>b-a)
@@ -636,4 +636,14 @@ function largestpair(n){
 const result=largestpair([9,10,11,3,3,3,2,2,1])
 console.log(result)
 output:21
+```
+# Question 45 Smallest pair sum in an array
+```jsx
+function largestpair(n){
+    const num=n.sort((a,b)=>a-b)
+    return num[0]+num[1]
+}
+const result=largestpair([9,10,11,3,3,3,2,2,1])
+console.log(result)
+output:3
 ```
