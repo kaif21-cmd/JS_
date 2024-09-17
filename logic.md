@@ -617,7 +617,7 @@ function anagram(){
 anagram()
 output : True
 ```
-# Question Longest Word in the String 
+# Question 43 Longest Word in the String 
 ```jsx
 function longestword(){
     var str="hello my name is kaif shaikh"
@@ -626,4 +626,14 @@ function longestword(){
     console.log(longestword[0].length)
 }
 longestword()
+```
+# Largest Pair sum in an array 
+```jsx
+function largestpair(n){
+    const num=n.sort((a,b)=>b-a)
+    return num[0]+num[1]
+}
+const result=largestpair([9,10,11,3,3,3,2,2,1])
+console.log(result)
+output:21
 ```
