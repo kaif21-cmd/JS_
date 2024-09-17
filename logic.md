@@ -600,3 +600,20 @@ const sum=ar.map((num,index)=>num+ar2[index]+ar3[index])
 console.log(sum)
 [ 15, 18, 21, 24 ]
 ```
+# Question 42 Find the Anagaram in string 
+```jsx
+function anagram(){
+    var a="Army"
+    var b="Mary"
+    let str1=a.toLowerCase().split('').sort().join('')
+    let str2=b.toLowerCase().split('').sort().join('')
+    if(str1===str2){
+        console.log("True")
+    }
+    else{
+        console.log("false")
+    }
+}
+anagram()
+output : True
+```
