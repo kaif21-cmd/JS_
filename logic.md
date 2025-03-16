@@ -728,6 +728,28 @@ console.log(countCharacter("hello world", "o")); // Output: 2
 console.log(countCharacter("javascript", "a")); // Output: 2
 
 ```
+# 50 count words in string 
+
+```jsx
+
+function countWord(str, word) {
+    let words = str.split(" "); // Split the string into words
+    let count = 0;
+    
+    for (let i = 0; i < words.length; i++) {
+        if (words[i] === word) {
+            count++;
+        }
+    }
+    return count;
+}
+
+// Example usage:
+console.log(countWord("hello world hello everyone", "hello")); // Output: 2
+console.log(countWord("this is a test and this test is good", "test")); // Output: 2
+
+
+```
 
 
 
