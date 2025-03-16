@@ -683,3 +683,18 @@ const a = armstrong(153); // Example test case
 console.log(a);
 
 ```
+
+# Question 48 Replace zero with one 
+
+```jsx
+
+function replaceZeroWithOne(num) {
+    return parseInt(num.toString().split('').map(digit => digit === '0' ? '1' : digit).join(''));
+}
+
+// Example usage:
+console.log(replaceZeroWithOne(102030)); // Output: 112131
+console.log(replaceZeroWithOne(50060));  // Output: 51161
+
+
+```
