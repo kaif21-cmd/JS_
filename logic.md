@@ -698,3 +698,37 @@ console.log(replaceZeroWithOne(50060));  // Output: 51161
 
 
 ```
+
+# find the count of a specific character in a string
+
+```jsx
+function countCharacter(str, char) {
+    return [...str].reduce((count, c) => c === char ? count + 1 : count, 0);
+}
+
+// Example usage:
+console.log(countCharacter("hello world", "o")); // Output: 2
+console.log(countCharacter("javascript", "a")); // Output: 2
+
+```
+# 2nd way 
+```jsx
+function countCharacter(str, char) {
+    let count = 0;
+    for (let i = 0; i < str.length; i++) {
+        if (str[i] === char) {
+            count++;
+        }
+    }
+    return count;
+}
+
+// Example usage:
+console.log(countCharacter("hello world", "o")); // Output: 2
+console.log(countCharacter("javascript", "a")); // Output: 2
+
+```
+
+
+
+
