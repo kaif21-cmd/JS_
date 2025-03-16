@@ -658,3 +658,28 @@ function alternattext(str){
 }
 console.log(alternattext("Kaif Shaikh"))
 ```
+# Question 47 Armdstrong Number 
+```jsx
+function armstrong(no) {
+    var digit, copy, sum = 0;
+    copy = no;
+    
+    while (no !== 0) {
+        digit = no % 10;
+        sum += (digit * digit * digit);
+        no = Math.floor(no / 10); // Use Math.floor to avoid decimal issues
+    }
+    
+    if (copy === sum) {
+        console.log("The number is an Armstrong number");
+        return true;
+    } else {
+        console.log("The number is not an Armstrong number");
+        return false;
+    }
+}
+
+const a = armstrong(153); // Example test case
+console.log(a);
+
+```
