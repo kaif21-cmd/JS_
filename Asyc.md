@@ -21,3 +21,15 @@ const interval=setInterval(()=>{
     count++
 },1000)
 ```
+# ClearInterval
+```jsx
+let count=0;
+const interval=setInterval(()=>{
+    console.log(count)
+    count++
+if (count>5){
+    clearInterval(interval)
+    console.log("Stopped counting.");
+}
+},1000)
+```
