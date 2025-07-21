@@ -13,3 +13,11 @@ setInterval(()=>{
 },1000)
 
 ```
+# Counter Function using setinterval
+```jsx
+let count=0;
+const interval=setInterval(()=>{
+    console.log(count)
+    count++
+},1000)
+```
