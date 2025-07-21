@@ -73,3 +73,13 @@ Promise.all([
 });
 
 ```
+# Promsie.race()
+```jsx
+Promise.race([
+  new Promise(res => setTimeout(() => res("First"), 1000)),
+  new Promise(res => setTimeout(() => res("Second"), 2000))
+]).then(result => {
+  console.log(result); // "First"
+});
+
+```
