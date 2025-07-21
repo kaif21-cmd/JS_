@@ -48,3 +48,17 @@ setTimeout(() => {
 }, 1000);
 
 ```
+
+# Promises
+## promises are the cleanway to handel async operation in js 
+```jsx
+const mypromises=new Promise((resolve,reject)=>{
+    let success=true;
+    if(success){
+        resolve('success')
+    }
+    else{
+        reject('failed')
+    }
+});
+```
