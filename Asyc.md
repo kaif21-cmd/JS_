@@ -62,7 +62,7 @@ const mypromises=new Promise((resolve,reject)=>{
     }
 });
 ```
-# Promise 
+# Promise.all
 ```jsx
 Promise.all([
   Promise.resolve("A"),
