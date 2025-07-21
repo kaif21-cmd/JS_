@@ -62,3 +62,14 @@ const mypromises=new Promise((resolve,reject)=>{
     }
 });
 ```
+# Promise 
+```jsx
+Promise.all([
+  Promise.resolve("A"),
+  Promise.resolve("B"),
+  Promise.resolve("C")
+]).then(results => {
+  console.log(results); // ["A", "B", "C"]
+});
+
+```
