@@ -83,3 +83,19 @@ Promise.race([
 });
 
 ```
+# Fetching with Promises
+```jsx
+fetch('https://jsonplaceholder.typicode.com/posts/1')
+.then(response=>{
+    if(!response.ok){
+        throw new Error('network was not good')
+    }
+    return response.json()
+})
+.then(data=>{
+    console.log("fetched data",data)
+})
+.catch(error=>{
+    console,log('Fetch error',error)
+})
+```
