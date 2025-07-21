@@ -22,6 +22,7 @@ const interval=setInterval(()=>{
 },1000)
 ```
 # ClearInterval
+## used to stop the setInterval
 ```jsx
 let count=0;
 const interval=setInterval(()=>{
