@@ -105,4 +105,107 @@ uploadImages(images)
   .catch((err) => console.log("Error:", err));
 
 ```
+# Full working Image Uploader feature using react
+
+```jsx
+import React, { useState } from "react";
+
+// Simulated single image upload function
+function uploadImage(image) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Randomly fail or succeed
+      if (Math.random() > 0.1) {
+        console.log(`Uploaded image: ${image.name}`);
+        resolve(`✅ Success: ${image.name}`);
+      } else {
+        reject(`❌ Failed to upload: ${image.name}`);
+      }
+    }, 1000);
+  });
+}
+
+function App() {
+  const [selectedFiles, setSelectedFiles] = useState([]);
+  const [loading, setLoading] = useState(false);
+  const [results, setResults] = useState([]);
+
+  // Handle file selection
+  const handleFileChange = (e) => {
+    const files = Array.from(e.target.files);
+    setSelectedFiles(files);
+    setResults([]); // clear old results
+  };
+
+  // Upload multiple images
+  const handleUpload = async () => {
+    if (selectedFiles.length === 0) {
+      alert("Please select some images first!");
+      return;
+    }
+
+    setLoading(true);
+    try {
+      const uploadPromises = selectedFiles.map((file) => uploadImage(file));
+      const res = await Promise.all(uploadPromises);
+      setResults(res);
+    } catch (err) {
+      setResults([err]); // show error
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  return (
+    <div style={{ padding: "20px" }}>
+      <h2>📤 SocialConnect Image Uploader</h2>
+
+      {/* File Input */}
+      <input type="file" multiple accept="image/*" onChange={handleFileChange} />
+
+      {/* Upload Button */}
+      <button onClick={handleUpload} style={{ marginLeft: "10px" }}>
+        Upload
+      </button>
+
+      {/* Preview Selected Images */}
+      {selectedFiles.length > 0 && (
+        <div style={{ marginTop: "20px" }}>
+          <h3>Preview:</h3>
+          <div style={{ display: "flex", gap: "10px", flexWrap: "wrap" }}>
+            {selectedFiles.map((file, i) => (
+              <div key={i} style={{ textAlign: "center" }}>
+                <img
+                  src={URL.createObjectURL(file)}
+                  alt={file.name}
+                  style={{ width: "120px", height: "120px", objectFit: "cover", borderRadius: "8px" }}
+                />
+                <p style={{ fontSize: "12px" }}>{file.name}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      )}
+
+      {/* Loading Indicator */}
+      {loading && <p>Uploading images... ⏳</p>}
+
+      {/* Results */}
+      {results.length > 0 && (
+        <div style={{ marginTop: "20px" }}>
+          <h3>Upload Results:</h3>
+          <ul>
+            {results.map((r, i) => (
+              <li key={i}>{r}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+    </div>
+  );
+}
+
+export default App;
+
+```
 
