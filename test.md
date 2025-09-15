@@ -208,4 +208,79 @@ function App() {
 export default App;
 
 ```
+# 3 A social media company, "SocialConnect", wants to implement a feature that allows users to login using their Facebook accounts. The development team has decided to use React Hooks to handle the login functionality. The team wants to create a custom hook called useFacebookLogin that takes in an API endpoint URL as an argument and returns an object with two properties: login and logout. The login property should be a function that makes a POST request to the provided API endpoint URL with the user's Facebook access token. The logout property should be function that clears the user's access token from local storage.
 
+You are tasked with implementing this custom hook using React Hooks. Assume you have already installed the required packages and set up your development environment.
+
+Write the code for the useFacebookLogin custom hook.
+
+// Your code here
+Note: You can assume that you have access to the useState and useEffect hooks from React.
+
+```jsx
+import React, { useState, useEffect } from "react";
+
+function App() {
+  const [token, setToken] = useState(() => localStorage.getItem("fb_token"));
+  const [message, setMessage] = useState("");
+
+  useEffect(() => {
+    if (token) {
+      localStorage.setItem("fb_token", token);
+    } else {
+      localStorage.removeItem("fb_token");
+    }
+  }, [token]);
+
+  const login = async () => {
+    try {
+      // Normally you’ll get fbAccessToken from Facebook SDK
+      const fbAccessToken = "dummy_fb_access_token";
+
+      // Simulate API call
+      const response = await fetch("/api/facebook-login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ access_token: fbAccessToken }),
+      });
+
+      if (!response.ok) throw new Error("Login failed");
+
+      const data = await response.json();
+      setToken(data.access_token || fbAccessToken);
+      setMessage("✅ Logged in successfully!");
+    } catch (err) {
+      console.error(err);
+      setMessage("❌ Failed to login");
+    }
+  };
+
+  const logout = () => {
+    setToken(null);
+    setMessage("👋 Logged out successfully!");
+  };
+
+  return (
+    <div style={{ textAlign: "center", marginTop: "40px" }}>
+      <h2>Facebook Login Demo</h2>
+
+      {token ? (
+        <>
+          <p>🔑 Logged in with token: {token}</p>
+          <button onClick={logout}>Logout</button>
+        </>
+      ) : (
+        <>
+          <p>You are not logged in</p>
+          <button onClick={login}>Login with Facebook</button>
+        </>
+      )}
+
+      {message && <p style={{ marginTop: "20px" }}>{message}</p>}
+    </div>
+  );
+}
+
+export default App;
+
+```
