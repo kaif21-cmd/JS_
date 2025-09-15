@@ -14,4 +14,30 @@ console.log(result);
 // Output: <span style="font-size: 24px; font-family: Arial;">Hello World!</span>
 
 ```
+# using react
+```jsx
+import React, { useState } from "react";
+
+const App = () => {
+  const [useString, setString] = useState(null);
+
+  const showString = () => {
+    setString(
+      <span style={{ fontSize: "24px", fontFamily: "Arial" }}>
+        Hello World!
+      </span>
+    );
+  };
+
+  return (
+    <div>
+      <button onClick={showString}>Click</button>
+      <div>{useString}</div>
+    </div>
+  );
+};
+
+export default App;
+
+```
 
