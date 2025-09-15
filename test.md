@@ -3,3 +3,15 @@
 # Example:
 # Agar function ko call karein fontSize = 24, fontFamily = "Arial", aur text = "Hello World!" ke saath, to output hoga:
 
+```jsx
+function formatText(fontSize, fontFamily, text) {
+  return `<span style="font-size: ${fontSize}px; font-family: ${fontFamily};">${text}</span>`;
+}
+
+// Example usage:
+const result = formatText(24, "Arial", "Hello World!");
+console.log(result);
+// Output: <span style="font-size: 24px; font-family: Arial;">Hello World!</span>
+
+```
+
