@@ -40,4 +40,22 @@ const App = () => {
 export default App;
 
 ```
+# 2 :
+# A social media platform "SocialConnect" ek feature implement karna chahta hai jisme users ek sath multiple images upload kar saken. Platform frontend development ke liye JavaScript use karta hai. Development team yeh ensure karna chahti hai ki images asynchronously upload ho taki UI freeze na ho. Saath hi, ek loading indicator dikhna chahiye jab tak saari images successfully upload na ho jayein. 
+# Tumhe ek JavaScript function uploadImages implement karna hai jo ek array of image blobs as argument lega aur ek promise return karega jo tab resolve hoga jab saari images successfully upload ho jayengi. Function ko asynchronous programming with promises use karke banana hai.
+
+```jsx
+function uploadImage(image) {
+  // API call to upload image
+  return new Promise((resolve, reject) => {
+    // implementation
+  });
+}
+
+function uploadImages(images) {
+  // implementation
+}
+
+```
+
 
