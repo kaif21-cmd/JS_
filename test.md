@@ -57,5 +57,52 @@ function uploadImages(images) {
 }
 
 ```
+```jsx
+// Simulated single image upload function
+function uploadImage(image) {
+  return new Promise((resolve, reject) => {
+    // Simulate async API call with setTimeout
+    setTimeout(() => {
+      // Randomly fail or succeed
+      if (Math.random() > 0.1) {
+        console.log(`Uploaded image: ${image.name}`);
+        resolve(`Success: ${image.name}`);
+      } else {
+        reject(`Failed to upload: ${image.name}`);
+      }
+    }, 1000);
+  });
+}
 
+// Upload multiple images
+function uploadImages(images) {
+  console.log("Uploading images... please wait ⏳");
+
+  // Map each image to an upload promise
+  const uploadPromises = images.map((img) => uploadImage(img));
+
+  // Wait for all uploads to finish
+  return Promise.all(uploadPromises)
+    .then((results) => {
+      console.log("✅ All images uploaded successfully!");
+      return results;
+    })
+    .catch((error) => {
+      console.error("❌ Some image failed:", error);
+      throw error;
+    });
+}
+
+// Example usage:
+const images = [
+  { name: "img1.png" },
+  { name: "img2.png" },
+  { name: "img3.png" }
+];
+
+uploadImages(images)
+  .then((res) => console.log("Results:", res))
+  .catch((err) => console.log("Error:", err));
+
+```
 
