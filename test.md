@@ -340,3 +340,43 @@ fetchAllAPIs()
   .catch((err) => console.log("Error:", err));
 
 ```
+# Use Promise.race() with 3 promises: One resolves in 2s, one in 3s, one fails in 1s. Which one is returned? Handle errors gracefully.
+```jsx
+// Simulated promises
+function createPromise(name, delay, shouldFail = false) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldFail) {
+        console.error(`${name} ❌ Failed`);
+        reject(`${name} failed`);
+      } else {
+        console.log(`${name} ✅ Resolved`);
+        resolve(`${name} success`);
+      }
+    }, delay);
+  });
+}
+
+// Using Promise.race
+function runRace() {
+  console.log("Starting the race... 🏁");
+
+  const promises = [
+    createPromise("P1", 2000),        // resolves in 2s
+    createPromise("P2", 3000),        // resolves in 3s
+    createPromise("P3", 1000, true),  // fails in 1s
+  ];
+
+  return Promise.race(promises)
+    .then((result) => {
+      console.log("🏆 Race winner:", result);
+    })
+    .catch((error) => {
+      console.log("⚠️ Race ended with error:", error);
+    });
+}
+
+// Run it
+runRace();
+
+```
