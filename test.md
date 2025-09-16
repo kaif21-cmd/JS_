@@ -380,3 +380,63 @@ function runRace() {
 runRace();
 
 ```
+# Create a function that limits concurrent uploads to 2 images at a time, even if there are 5 images.
+```jsx
+// Simulated image upload function
+function uploadImage(image) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (Math.random() > 0.2) {
+        console.log(`✅ Uploaded: ${image.name}`);
+        resolve(`Success: ${image.name}`);
+      } else {
+        console.error(`❌ Failed: ${image.name}`);
+        reject(`Failed: ${image.name}`);
+      }
+    }, 1000 + Math.random() * 1000); // random delay 1–2s
+  });
+}
+
+// Upload images with concurrency limit
+async function uploadImagesWithLimit(images, limit = 2) {
+  const results = [];
+  let index = 0;
+
+  // Worker function → uploads next image
+  async function worker() {
+    while (index < images.length) {
+      const currentIndex = index++;
+      const image = images[currentIndex];
+
+      try {
+        const res = await uploadImage(image);
+        results[currentIndex] = res;
+      } catch (err) {
+        results[currentIndex] = err;
+      }
+    }
+  }
+
+  // Start workers (max = limit)
+  const workers = Array.from({ length: limit }, () => worker());
+  await Promise.all(workers);
+
+  return results;
+}
+
+// Example usage
+(async () => {
+  const images = [
+    { name: "img1.png" },
+    { name: "img2.png" },
+    { name: "img3.png" },
+    { name: "img4.png" },
+    { name: "img5.png" }
+  ];
+
+  console.log("🚀 Starting uploads with concurrency = 2...");
+  const res = await uploadImagesWithLimit(images, 2);
+  console.log("✅ Final Results:", res);
+})();
+
+```
