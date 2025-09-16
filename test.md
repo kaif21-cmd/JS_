@@ -440,3 +440,49 @@ async function uploadImagesWithLimit(images, limit = 2) {
 })();
 
 ```
+# Implement a timeout: if a promise takes more than 3 seconds, reject it with "Request timed out"
+
+```jsx
+// Timeout wrapper
+function withTimeout(promise, ms = 3000) {
+  return new Promise((resolve, reject) => {
+    const timer = setTimeout(() => {
+      reject("⏰ Request timed out");
+    }, ms);
+
+    promise
+      .then((res) => {
+        clearTimeout(timer);
+        resolve(res);
+      })
+      .catch((err) => {
+        clearTimeout(timer);
+        reject(err);
+      });
+  });
+}
+
+// Example: Simulated API
+function fakeAPI(name, delay, shouldFail = false) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      if (shouldFail) {
+        reject(`${name} ❌ Failed`);
+      } else {
+        resolve(`${name} ✅ Success`);
+      }
+    }, delay);
+  });
+}
+
+// Usage
+(async () => {
+  try {
+    const result = await withTimeout(fakeAPI("API 1", 5000), 3000);
+    console.log("Result:", result);
+  } catch (err) {
+    console.error("Error:", err);
+  }
+})();
+
+```
