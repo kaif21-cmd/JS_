@@ -287,33 +287,56 @@ export default App;
 # Write a function that fetches data from 3 fake APIs (simulate with setTimeout). If any API fails, the program should still return results from the others.
 
 ```jsx
-function fetchapi(apiname,delay){
-    return new Promise((resolve,reject)=>{
-        setTimeout(()=>{
-            if(Math.random()>0.3){
-                console.log(`${apiname} succes`)
-                resolve(`${apiname} data`)
-            }else{
-                console.error(`${apiname} failed`)
-                reject(`${apiname} failed`)
-            }
-        },delay)
+// Simulated Fake API function
+function fetchAPI(apiName, delay) {
+  return new Promise((resolve, reject) => {
+    setTimeout(() => {
+      // Random success/failure
+      if (Math.random() > 0.3) {
+        console.log(`${apiName} ✅ Success`);
+        resolve(`${apiName} data`);
+      } else {
+        console.error(`${apiName} ❌ Failed`);
+        reject(`${apiName} failed`);
+      }
+    }, delay);
+  });
+}
+
+// Fetch multiple APIs
+function fetchAllAPIs() {
+  console.log("Fetching data from APIs... please wait ⏳");
+
+  // Map API calls into promises
+  const apiPromises = [
+    fetchAPI("API 1", 1000),
+    fetchAPI("API 2", 1500),
+    fetchAPI("API 3", 2000),
+  ];
+
+  // Use Promise.allSettled so we always get all results
+  return Promise.allSettled(apiPromises)
+    .then((results) => {
+      const success = results
+        .filter((res) => res.status === "fulfilled")
+        .map((res) => res.value);
+
+      const failed = results
+        .filter((res) => res.status === "rejected")
+        .map((res) => res.reason);
+
+      return { success, failed };
     })
+    .catch((err) => {
+      // This won't usually trigger with allSettled
+      console.error("Unexpected error:", err);
+      throw err;
+    });
 }
 
-function fetchallapi(){
-    console.log()
+// Example usage
+fetchAllAPIs()
+  .then((res) => console.log("Final Results:", res))
+  .catch((err) => console.log("Error:", err));
 
-    const apipromises=[
-        fetchapi("Api1,1000"),
-        fetchapi("Api2,1500"),
-        fetchapi("Api3,2000"),
-        
-    ]
-     return new Promise(apipromises)
-     .then((res)=>{
-        .filter((res)=>res.status==='fulfil')
-        .map((res)=>res.value)
-     })
-}
 ```
