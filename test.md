@@ -284,3 +284,36 @@ function App() {
 export default App;
 
 ```
+# Write a function that fetches data from 3 fake APIs (simulate with setTimeout). If any API fails, the program should still return results from the others.
+
+```jsx
+function fetchapi(apiname,delay){
+    return new Promise((resolve,reject)=>{
+        setTimeout(()=>{
+            if(Math.random()>0.3){
+                console.log(`${apiname} succes`)
+                resolve(`${apiname} data`)
+            }else{
+                console.error(`${apiname} failed`)
+                reject(`${apiname} failed`)
+            }
+        },delay)
+    })
+}
+
+function fetchallapi(){
+    console.log()
+
+    const apipromises=[
+        fetchapi("Api1,1000"),
+        fetchapi("Api2,1500"),
+        fetchapi("Api3,2000"),
+        
+    ]
+     return new Promise(apipromises)
+     .then((res)=>{
+        .filter((res)=>res.status==='fulfil')
+        .map((res)=>res.value)
+     })
+}
+```
