@@ -1,4 +1,4 @@
-//QUESTION 1 FACTORY FUNCTION IN JṢ.
+//QUESTION 1 FACTORY FUNCTION IN JṢ..
 // A factory function is a function in JavaScript that returns a new object every time it is called. Unlike using the new keyword with a constructor function or a class, a factory function simply creates and returns an object using object literal syntax or other means.
 // Factory functions are useful when you want to create multiple instances of similar objects without using classes or constructor functions. They can also encapsulate and manage the creation logic, allowing for more flexibility and customization
 function createperson(name,age){
@@ -129,6 +129,7 @@ console.log(multiply(3, 4, 5, 6)); // Output: [12, 15, 18]
 //QUESTION 10 WHAT IS HIGHER ORDER FUNCTION
 //A FUNCTION THAT RETURNS ANOTHER FUNCTION  IS CALLED HIGHER ORDER FUNCTION
 //EXAMPLE // FILTER,MAP,REDUCE THEY ALL ARE HIGHER ORDER FUNCTION
+
 
 
 
